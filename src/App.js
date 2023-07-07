@@ -7,19 +7,11 @@ import About from "./components/About";
 import Contact from "./components/ContactForm";
 import Footer from "./components/Footer";
 import CourseTopic from "./components/CourseTopic";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <BrowserRouter>
-        <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </BrowserRouter>
       <Home />
       <About />
       <CourseTopic />

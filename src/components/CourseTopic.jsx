@@ -1,5 +1,7 @@
 
 import React from "react";
+import Courses from "./Courses";
+
 
 function CourseTopic() {
   return (
@@ -18,7 +20,7 @@ function CourseTopic() {
               </p>
             </div>
             <div className="bg-gray-100 p-4">
-              <a href="#" className="text-blue-600 font-bold hover:underline"
+              <a href="/Courses.jsx" className="text-blue-600 font-bold hover:underline"
                 >Learn More</a
               >
             </div>
