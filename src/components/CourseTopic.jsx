@@ -1,10 +1,32 @@
 
 import React from "react";
 import Courses from "./Courses";
+import {useNavigate} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 
-function CourseTopic() {
-  return (
+
+ const CourseTopic = () => {
+ const navigate = useNavigate();
+  function blockchainclickHandler() {
+     navigate("/blockchain");
+  }
+  function cryptoclickHandler() {
+     navigate("/crypto");
+  }
+  function solidityclickHandler() {
+     navigate("/solidity");
+  }
+  function metamaskclickHandler() {
+     navigate("/metamask");
+  }
+  function javascriptclickHandler() {
+     navigate("/javascript");
+  }
+  function frontendclickHandler() {
+     navigate("/frontend");
+  }
+   return (
     <div className="CourseTopic">
      <section className="bg-blue-400">
       <div id="courses" class="bg-gray-300 p-8">
@@ -19,11 +41,12 @@ function CourseTopic() {
                 optimize your tax strategy and minimize your tax liability.
               </p>
             </div>
-            <div className="bg-gray-100 p-4">
-              <a href="/Courses.jsx" className="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+            <NavLink>
+              <div className="bg-gray-100 p-4">
+             
+              <button onClick={blockchainclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
+            </NavLink>
           </div>
         
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -35,9 +58,8 @@ function CourseTopic() {
               </p>
             </div>
             <div className="bg-gray-100 p-4">
-              <a href="#" class="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+             
+              <button onClick={cryptoclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
 
@@ -50,10 +72,9 @@ function CourseTopic() {
                 business grow and succeed.
               </p>
             </div>
-            <div className="bg-gray-100 p-4">
-              <a href="#" className="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+           <div className="bg-gray-100 p-4">
+             
+              <button onClick={solidityclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
         
@@ -68,12 +89,9 @@ function CourseTopic() {
                 the complex world of fraud and financial crime.
               </p>
             </div>
-            <div className="bg-gray-100 p-4">
-              <a
-                href="/src/Fraud&FinancialCrimeLawyers.html"
-                class="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+           <div className="bg-gray-100 p-4">
+             
+              <button onClick={metamaskclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
        
@@ -88,12 +106,9 @@ function CourseTopic() {
                 proper legal guidance.
               </p>
             </div>
-            <div className="bg-gray-100 p-4">
-              <a
-                href="./IntellectualPropertyRights.html"
-                className="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+          <div className="bg-gray-100 p-4">
+             
+              <button onClick={javascriptclickHandler}  className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
          
@@ -110,12 +125,9 @@ function CourseTopic() {
                 tailored specifically to your needs.
               </p>
             </div>
-            <div className="bg-gray-100 p-4">
-              <a
-                href="./DFI.html"
-                className="text-blue-600 font-bold hover:underline"
-                >Learn More</a
-              >
+           <div className="bg-gray-100 p-4">
+             
+              <button onClick={frontendclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
         </div>
