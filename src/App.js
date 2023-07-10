@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/ContactForm";
 import Footer from "./components/Footer";
 import CourseTopic from "./components/CourseTopic";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -17,6 +18,26 @@ function App() {
       <CourseTopic />
       <Contact />
       <Footer />
+
+      <Routes>
+        <Route path="/navbar" element={<Navbar />} />
+      </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Routes>
+        <Route path="/coursetopic" element={<CourseTopic />} />
+      </Routes>
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Routes>
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
     </div>
   );
 }
