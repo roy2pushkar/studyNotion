@@ -14,6 +14,7 @@ import JavaScript from "./components/JavaScript";
 import Metamask from "./components/Metamask";
 import Solidity from "./components/Solidity";
 import Crypto from "./components/Crypto";
+import Login from "./components/Loginpage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Footer />
 
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/blockchain" element={<BlockChain />} />
 
         <Route path="/crypto" element={<Crypto />} />
