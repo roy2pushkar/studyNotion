@@ -22,7 +22,7 @@ const Login = () => {
               id="email"
               className="w-full border border-gray-300 rounded px-4 py-2"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(console.log(e.target.value))}
               required
             />
           </div>
@@ -33,7 +33,7 @@ const Login = () => {
               id="password"
               className="w-full border border-gray-300 rounded px-4 py-2"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPassword(console.log(e.target.value))}
               required
             />
           </div>
