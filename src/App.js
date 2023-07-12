@@ -15,19 +15,15 @@ import Metamask from "./components/Metamask";
 import Solidity from "./components/Solidity";
 import Crypto from "./components/Crypto";
 import Login from "./components/Loginpage";
+import Front from "./components/Front";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <About />
-      <CourseTopic />
-      <Contact />
-      <Footer />
+      <Front />
 
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/blockchain" element={<BlockChain />} />
 
         <Route path="/crypto" element={<Crypto />} />
