@@ -4,13 +4,20 @@ import dark from '../images/dark-mode.png';
 import day from '../images/day-mode.png';
 import image from '../images/web-3.0.jpg'
 import { useNavigate } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import heroimage from '../images/heroimage.jpg'
+import crypto from '../images/crypto.jpg';
+import blockchain from '../images/blockchain.jpg';
+import metamask from '../images/metamask.jpg';
+import solidity from '../images/solidity.jpg'
+import web3 from '../images/web3.jpg'
+import programming from '../images/programming.jpg'
 
 function MainPage() {
   const navigate = useNavigate();
-  function blockchainclickHandler() {
-     navigate("/blockchain");
+  function basicprgclickHandler() {
+       
+     navigate("/basicsprogramming");
   }
   function cryptoclickHandler() {
      navigate("/crypto");
@@ -30,7 +37,7 @@ function MainPage() {
   return (
     <div className="MainPage">
     <div className="sticky rounded-md outline-purple-200 shadow-white ">
-       <nav className="  bg-purple-600  ">
+       <nav className="  bg-purple-400  ">
         <div className="  flex justify-between items-center p-8 mx-6">
           <div>
             <a href="#" className="text-3xl font-extrabold">
@@ -83,7 +90,7 @@ function MainPage() {
         </div>
       </nav>
     </div>
-      <div className="Home flex justify-between p-8 items-center bg-purple-900">
+      <div className="Home flex justify-between p-8 items-center bg-purple-500">
         <div className="uppercase font-extrabold text-3xl">
           <h1 className=" text-orange-500 ">Blockchain Technology</h1>
         </div>
@@ -123,117 +130,153 @@ function MainPage() {
       </div>
     </section>
     </div>
-  );
+  
     <div className="CourseTopic">
-     <section className="bg-blue-400">
+     <section className="bg-purple-600">
       <div id="courses" class="bg-gray-300 p-8">
         <h2 className="text-2xl font-extrabold text-center uppercase">Courses</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+       <Link to="/basicsprogramming">
+        <div className="
+           overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold mb-2 uppercase">BlockChain</h3>
-              <p className="text-gray-700 leading-6">
+              <h3 className="text-xl font-bold mb-2 font-serif  ">Basic Programming</h3>
+             
+            </div>
+            <div className="flex flex-col gap-2">
+              <img src= {programming}  className="w-[360px] h-[250px]" alt="intro-to-programming" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
               </p>
+
             </div>
             
-              <div className="bg-gray-100 p-4">
+              <div className=" p-4">
              
-              <button onClick={blockchainclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={basicprgclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
             
           </div>
+       </Link>
         
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <Link to="/blockchain">
+            <div className="
+           overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold mb-2 uppercase">crypto</h3>
-              <p className="text-gray-700 leading-6">
-                Our audit services ensure your financial statements are
-                accurate, complete and comply with all relevant regulations.
-              </p>
+              <h3 className="text-xl font-bold mb-2 font-serif">What is Blockchain ??</h3>
+              
             </div>
-            <div className="bg-gray-100 p-4">
+             <div className="flex flex-col gap-2">
+              <img src= {blockchain}  className="w-[360px] h-[250px]" alt="blockchain" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
+                Our experienced team of chartered accountants can help you
+                optimize your tax strategy and minimize your tax liability.
+              </p>
+
+            </div>
+            <div className=" p-4">
              
               <button onClick={cryptoclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
+        </Link>
 
        
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+         <Link to="/web3">
+          <div className=" 
+           overflow-hidden hover:bg-gray-500">
             <div class="p-4">
-              <h3 className="text-xl font-bold mb-2 uppercase">Solidity</h3>
-              <p className="text-gray-700 leading-6">
-                Our expert consultants can provide strategic advice to help your
-                business grow and succeed.
-              </p>
+              <h3 className="text-xl font-bold mb-2 font-serif ">What is Web3.0 ??</h3>
+              
             </div>
-           <div className="bg-gray-100 p-4">
+             <div className="flex flex-col gap-2">
+              <img src= {web3}  className="w-[360px] h-[250px]" alt="web3" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
+                Our experienced team of chartered accountants can help you
+                optimize your tax strategy and minimize your tax liability.
+              </p>
+
+            </div>
+           <div className=" p-4">
              
               <button onClick={solidityclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
-        
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        </Link>
+          <Link to="/metamask">
+          <div className=" 
+           overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 classNameN
-            ="text-xl font-bold mb-2 uppercase">Metamask</h3>
-              <p class="text-gray-700 leading-6">
-                As fraud and financial crime lawyers, we offer a comprehensive
-                range of services to address your legal needs. Our team is
-                dedicated to providing expert guidance and support in navigating
-                the complex world of fraud and financial crime.
-              </p>
+              <h3 className
+            ="text-xl font-bold mb-2 font-serif">What is Metamask ??</h3>
+             
             </div>
-           <div className="bg-gray-100 p-4">
+             <div className="flex flex-col gap-2">
+              <img src= {metamask}  className="w-[360px] h-[250px]" alt="metamask" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
+                Our experienced team of chartered accountants can help you
+                optimize your tax strategy and minimize your tax liability.
+              </p>
+
+            </div>
+           <div className=" p-4">
              
               <button onClick={metamaskclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
-          </div>
+          </div></Link>
        
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+          <Link to="/crypto">
+          <div className=" 
+           overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold mb-2 uppercase">javascript</h3>
-              <p className="text-gray-700 leading-6">
-                In today's modern world, safeguarding intellectual property has
-                become both crucial and challenging. However, navigating the
-                complexities of intellectual property protection, enforcement,
-                and avoidance of infringement can be daunting and risky without
-                proper legal guidance.
-              </p>
+              <h3 className="text-xl font-bold mb-2 font-serif">Setting up a Crypto Wallet </h3>
+              
             </div>
-          <div className="bg-gray-100 p-4">
+             <div className="flex flex-col gap-2">
+              <img src= {crypto}  className="w-[360px] h-[250px]" alt="crypto" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
+                Our experienced team of chartered accountants can help you
+                optimize your tax strategy and minimize your tax liability.
+              </p>
+
+            </div>
+          <div className=" p-4">
              
               <button onClick={javascriptclickHandler}  className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
+          </Link>
+         <Link to="/solidity">
          
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
+          <div className="
+           overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 class="text-xl font-bold mb-2 uppercase">Frontend</h3>
-              <p className="text-gray-700 leading-6">
-                At LTM DFI Forensics lab, we utilize cutting-edge tools and
-                techniques throughout the entire process, starting from
-                gathering evidence, meticulously analysing data, and delivering
-                exceptional results to our valued clients. Our commitment to
-                excellence ensures that we consistently employ the finest
-                industry tools, ensuring accurate and comprehensive solutions
-                tailored specifically to your needs.
-              </p>
+              <h3 class="text-xl font-bold mb-2 font-serif">Intro to Solidity</h3>
+             
             </div>
-           <div className="bg-gray-100 p-4">
+             <div className="flex flex-col gap-2">
+              <img src= {solidity}  className="w-[360px] h-[250px]" alt="solidity" /> 
+               <p className="text-gray-700 leading-6 w-[350px]">
+                Our experienced team of chartered accountants can help you
+                optimize your tax strategy and minimize your tax liability.
+              </p>
+
+            </div>
+           <div className=" p-4">
              
               <button onClick={frontendclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
+         </Link>
         </div>
       </div>
     </section>
     </div>
     <div className="Contact">
       <section className="bg-gray-400">
-      <div className="p-8 bg-gray-100">
+      <div className="p-8 bg-purple-300">
         <h3
           id="contact-us"
           className="text-2xl font-extrabold text-center uppercase"
@@ -241,7 +284,7 @@ function MainPage() {
           If You have any doubt,feel free to contact
         </h3>
         <form
-          className="bg-white shadow-md rounded px-8 pt-6 pb-8 flex flex-col items-center"
+          className="bg-purple-200 px-8 pt-6 pb-8 flex flex-col items-center"
         >
           
           <div className="mb-4 w-1/2">
@@ -312,6 +355,107 @@ function MainPage() {
       </div>
     </section>
     </div>
+    <footer className="bg-gray-800 sm:mt-10 pt-10">
+      <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+         
+          <a
+            className="text-white text-3xl font-bold uppercase hover:text-gray-300"
+            href="#"
+            >StudyNotion</a
+          >
+          <p className="text-gray-500 text-sm mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            illum hic culpa, maiores quas iste architecto ex a. Eligendi,
+            laboriosam vel.
+          </p>
+        </div>
+
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <div className="text-xs uppercase text-gray-500 font-medium mb-6">
+            Links
+          </div>
+          <a
+            href="#about-us"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >About</a
+          >
+          <a
+            href="#our-services"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Services</a
+          >
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Projects</a
+          >
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Contact</a
+          >
+        </div>
+
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <div className="text-xs uppercase text-gray-500 font-medium mb-6">
+            Courses
+          </div>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Web design</a
+          >
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Development</a
+          >
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >Hosting</a
+          >
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+            >CMS</a
+          >
+        </div>
+
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          <div className="text-xs uppercase text-gray-500 font-medium mb-6">
+            Contact
+          </div>
+          <p
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            <a href="#"> 1234 Some Address, Suite #000 </a>
+          </p>
+          <p
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            <a href="#"> +1 123 456 7890 </a>
+          </p>
+          <p
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            <a href="#"> email@example.com </a>
+          </p>
+          <p
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            <a href="#">
+              <p
+                className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+              >
+                Linkedin
+              </p>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
     </div>
   );
 }

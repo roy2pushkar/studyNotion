@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import 'tailwindcss/tailwind.css';
+
 import { useNavigate } from 'react-router-dom';
 
-const GetStarted = () => {
+const Web3 = () => {
   const navigate = useNavigate();
 
-  function clickHandler(){
-    navigate('/blockchainquizpage')
+  function quizclickHandler(){
+    navigate('/basicprogrammingquiz')
+  }
+   function backclickHandler(){
+    navigate('/mainpage')
   }
 
   return (
@@ -103,15 +106,25 @@ const GetStarted = () => {
                 <br/>
                 Backend services can be written in a variety of programming languages - JavaScript, Rust, Go, Python, C#, and many more. As you're starting your journey however, since you're going to be learning JavaScript anyway for the frontend, you might as well use JavaScript for the backend as well. While each programming language has it's own pros and cons, they are not enough for a beginner to try to master multiple different languages and paradigms at once. I highly recommend that if you want to build on web technologies, you choose JavaScript because it works on both ends of the tech stack.
             </p>
-
+            <br />
+           <div className='flex justify-between items-center'>
+             <div className=''>
+             <button  onClick={backclickHandler}
+        class="  transition-all focus-outline-none   flex items-center justify-center  border border-transparent text-base font-medium rounded-sm text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 h-10 cursor-pointer"
+        type="button">
+        Back
+      </button>
         </div>
-        <div className=' ml-64'>
-             <button  onClick={clickHandler}
-        class="  transition-all focus-outline-none cursor-pointer  flex items-center justify-center  border border-transparent text-base font-medium rounded-sm text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 h-10 cursor-pointer"
+         <div className=''>
+             <button  onClick={quizclickHandler}
+        class="  transition-all focus-outline-none   flex items-center justify-center  border border-transparent text-base font-medium rounded-sm text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 h-10 cursor-pointer"
         type="button">
         Start Quiz
       </button>
         </div>
+           </div>
+        </div>
+       
 
         <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
         <br />
@@ -159,4 +172,4 @@ const GetStarted = () => {
   );
 };
 
-export default GetStarted;
+export default Web3;

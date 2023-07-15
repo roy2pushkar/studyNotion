@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-
+import 'tailwindcss/tailwind.css';
 import { useNavigate } from 'react-router-dom';
 
-const Solidity = () => {
+const GetStarted = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
@@ -172,4 +172,4 @@ const Solidity = () => {
   );
 };
 
-export default Solidity;
+export default GetStarted;

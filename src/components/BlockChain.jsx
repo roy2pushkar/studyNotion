@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 
-const Solidity = () => {
+const BlockChain = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
@@ -172,4 +172,4 @@ const Solidity = () => {
   );
 };
 
-export default Solidity;
+export default BlockChain;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import  { useState } from 'react';
-import "./BlockChainQuizPage.css";
+
 
 
 
@@ -41,7 +41,7 @@ const BlockChainQuizPage = () => {
 
     return (
       <div className='pb-4'>
-        <p>{question}</p>
+        <p className=' font-bold text-xl  '>{question}</p>
         {Object.keys(answers).map((option) => (
           <label key={option} className="block">
             <input
@@ -51,10 +51,10 @@ const BlockChainQuizPage = () => {
               onChange={(e) => handleAnswerChange(e.target.value)}
               checked={userAnswers[currentQuestionIndex] === option}
             />
-            <span className="ml-2 pb-2">{option}: {answers[option]}</span>
+            <span className="ml-2 pt-2 p-4 ">{option}: {answers[option]}</span>
           </label>
         ))}
-        <div className="flex justify-between">
+        <div className="flex justify-between pt-2">
           {currentQuestionIndex > 0 && (
             <button
               className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
@@ -65,14 +65,14 @@ const BlockChainQuizPage = () => {
           )}
           {currentQuestionIndex === totalQuestions - 1 ? (
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded pt-2"
               onClick={handleSubmit}
             >
               Submit
             </button>
           ) : (
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded pt-2"
               onClick={handleNextQuestion}
             >
               Next

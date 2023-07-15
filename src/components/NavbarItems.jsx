@@ -6,7 +6,7 @@ import day from '../images/day-mode.png';
 function NavbarItems() {
   return (
     <div classNameName="App">
-      <nav className="bg-blue-400">
+      <nav className="bg-blue-400 w-full fixed">
         <div className="flex justify-between items-center p-8 mx-6">
           <div>
             <a href="#" className="text-3xl font-extrabold">
