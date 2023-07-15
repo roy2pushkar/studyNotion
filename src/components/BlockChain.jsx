@@ -16,23 +16,33 @@ const BlockChain = () => {
     <div className=" min-h-[100px] leading-relaxed bg-gray-700">
         <div className=' text- dark:text-gray-50 p-4 px-64 '>
             <h1 id='started with programming' className=' font-extrabold text-4xl lg:text-5xl '>
-               Started With Programming
+               Intro to Blockchain
             </h1>
             <p>
                 <br/>
                 <br />
             </p>
             <h1 id='How to get started with programming' className=' font-extrabold text-2xl lg:text-3xl '>
-              How to get Started With Programming ??
+             What is Blockchain ??
             </h1>
             <p>
                 <br/>
-                To get started as a Web3 developer, we need some background knowledge of Web2. Whether you're interested in creating smart contracts, dev tooling, protocol level development, AI image generation, or anything else - there are a lot of topics that have existed for decades that are still highly relevant and useful. A large part of what you would like to do today if you're reading this is learning how to build on top of web technologies - things that a user can access through a web browser.
+                A blockchain is a distributed, digital, immutable ledger that is used to record transactions and store data in a secure and transparent manner. It is based on a decentralized network of nodes that collectively maintain a single source of truth, allowing participants to interact with the system without the need for intermediaries.
             </p>
             <p>
                 <br/>
                 <br />
-                In this lesson, I will go over a few key terminologies you will definitely come across as you begin your journey, but more importantly talk about the mindset you should have as a developer who is just getting started on this journey.
+                A block is a container data structure that aggregates transactions for inclusion in the public ledger, the Blockchain. Each block in the chain contains a set of transactions that have been verified and recorded by the network of nodes through a process known as consensus. Once a block is added to the chain, it cannot be altered or deleted, creating an immutable record of all transactions on the network.
+            </p>
+            <br/>
+                <br />
+            <p>
+                Blockchains were popularized by the anonymous person (or group) Satoshi Nakamoto, when they released the Bitcoin Network in 2009. Bitcoin is a cryptocurrency network, and it handles primarily the transfer of the BTC asset across the network, without a trusted middleman or authority, while ensuring the network itself is secure and cannot be hacked. (P.S. The bitcoin network is also likely the biggest bug bounty in the world - if you can hack it, you're an instant trillionaire).
+            </p>
+            <br/>
+                <br />
+            <p>
+                Over time, this design of Bitcoin inspired other, more capable, blockchain networks to come out, like Ethereum. We will be learning a lot about Ethereum in the coming sessions.
             </p>
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
