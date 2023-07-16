@@ -47,56 +47,23 @@ const BlockChain = () => {
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Frontend Technologies
+                State Management
             </h2>
             <p>
-               A frontend is the interface with which a user interacts. On the web, the frontend refers to a website you can browse around, click on things, maybe even write stuff. Mobile apps and desktop apps are also valid examples of frontend interfaces. 
+              Blockchains start off with a Genesis State when they launch. Bitcoin's genesis state happened in 2009 when the public network launched. Ethereum's Genesis State happened in 2015, when it launched.
             </p><p>
                 <br/>
-                For the purposes of this lesson, we're going to focus on web technologies. 
+               Every transaction on a blockchain modifies the global state that is replicated across all nodes.
             </p>
             <p>
                 <br/>
-                Have you ever thought about how no matter what web browser you're using - Chrome, Firefox, Safari, Edge, etc - a website looks the exact same on all of them? 
+               Since there are millions of transactions, transactions get grouped together in blocks, hence the name - Blockchain. These blocks are chained together in a cryptographically verifiable way so they are historically traceable. The current state of a network can be recalculated at any time by starting from the genesis block and transitioning the state according to each block's information up until now.
             </p>
-            <p>
-                <br/>
-                This happens because of Web Standards. An organization known as the W3C (World Wide Web Consortium) sets standards, a set of explicit rules, that all companies such as Google, Microsoft, Mozilla, Apple, etc. must follow when building things like web browsers across different devices and across different operating systems. 
-            </p>
-            <p>
-                <br/>
-                Particularly, these standards are set around the three key things every web developer needs to have some familiarity with - HTML, CSS, and JavaScript.
-            </p>
-            <p>
-                <br/>
-               HTML is the language used to visually place elements on your screen. Things like this paragraph you're reading right now, things like buttons, things like a dropdown menu. You visually place elements across the screen using HTML.
-
-
-            </p>
-            <p>
-                <br/>
-               CSS is a styling language used to add styles and your own custom flair to these elements. By default, HTML elements look boring and plain. Remember those old 90s websites? Yeah, that was plain HTML. CSS allows you to customize things about HTML elements. Such as making a button round instead of a rectangle, changing the font of a paragraph, having some bold text or underlined text, and so on.
-            </p>
-            <p>
-                <br/>
-                And finally, to tie it all together comes JavaScript. JavaScript is arguably the most important aspect of building on web technologies. It is a fully functional programming language that is used to add real functionality to your website. 
-            </p>
-            <p>
-                <br/>
-               With HTML and CSS, you can place elements on a screen and make them look nice - but they won't actually do anything. Your button wouldn't actually do anything if you click it, more posts on Instagram will not load as you kept scrolling down, and so on.
-            </p>
-            <p>
-                <br/>
-               JavaScript allows you to add real interactivity and functionality to your websites. It is, without a doubt, the language of the web - and you will find that most of the lessons here on LearnWeb3 will use JavaScript in one way or the other. A website without JavaScript has no functionality other than letting you look at things a certain way. 
-            </p>
-            <p>
-                <br/>
-                Anyway, going back to the W3C - the W3C sets standards around how a web browser like Chrome must understand, run, and display the code being written by a web developer using HTML, CSS, and JavaScript. Because of those standards, all browsers across all devices and all operating systems work similarly and you do not have to worry about it. That's the power of building on web technologies. Unlike building mobile apps, where iOS and Android differ a lot from each other, or how building for Windows is very different from building for macOS or building for Linux - the web allows you to write your code once, and have it work everywhere - and we are going to leverage that.
-            </p>
+            
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Backend Technologies
+                Nodes
             </h2>
             <p>
               The backend refers to that part of a software that allows it to operate and cannot be directly accessed by the user. Most private data, business logic, data processing, etc. happens on the backend, and the frontend is to provide a visual representation of that data.
