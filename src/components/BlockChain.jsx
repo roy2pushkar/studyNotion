@@ -66,14 +66,18 @@ const BlockChain = () => {
                 Nodes
             </h2>
             <p>
-              The backend refers to that part of a software that allows it to operate and cannot be directly accessed by the user. Most private data, business logic, data processing, etc. happens on the backend, and the frontend is to provide a visual representation of that data.
+             A blockchain network is managed autonomously through a peer-to-peer distributed network of computer nodes. Without going into too much detail, you can simply think of each node in the network as keeping a copy of the global transaction ledger. Therefore, each node can individually verify and audit transactions happening on the network and ensure there was no illicit behavior.
+
+
             </p><p>
                 <br/>
-                For example, consider Instagram - Instagram has billions and billions of photos and videos on their platform. Some of those photos are posted by private accounts, photos that only people who follow that private account can see and anyone else cannot. The filtering of photos required for Instagram to show you your feed on the timeline vs. what they actually have available to them happens on their backend. It is important the backend is not directly accessible by users because otherwise private data can be leaked.
+              Another type of node, called a mining node, is responsible for grouping together new transactions being made on a network into a block, verifying them, and proposing the block to be included onto the global ledger by everyone else. Mining is computationally hard, and very important to do securely, so miners whose blocks get accepted are given a token reward for their hard work.
+
+
             </p>
             <p>
                 <br/>
-               If you've ever read news about some website getting hacked and user's private information - their address, names, credit cards, etc. - being leaked, that is because there was some bug in their backend that allowed a malicious actor to directly gain access to it. 
+              The use of a blockchain confirms that each unit of value was transferred only once, and the ingenious mechanisms put forth by Satoshi Nakamoto solved the long-standing decentralized double-spending problem.
             </p>
             <p>
                 <br/>
@@ -84,7 +88,94 @@ const BlockChain = () => {
                 Backend services can be written in a variety of programming languages - JavaScript, Rust, Go, Python, C#, and many more. As you're starting your journey however, since you're going to be learning JavaScript anyway for the frontend, you might as well use JavaScript for the backend as well. While each programming language has it's own pros and cons, they are not enough for a beginner to try to master multiple different languages and paradigms at once. I highly recommend that if you want to build on web technologies, you choose JavaScript because it works on both ends of the tech stack.
             </p>
             <br />
-           <div className='flex justify-between items-center'>
+            <br />
+            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Decentralization
+            </h2>
+            <p>
+             By storing data in a peer to peer network of nodes, the blockchain is a decentralized network. This has significant benefits over the traditional approach of storing data in a centralized manner. There are significant examples of problems with centralization - a few of which we will list here:
+
+            </p>
+            <br />
+            <br />
+            <ul>
+                <li>
+                    Data breaches in centralized systems expose a lot of data.
+                </li>
+                <br />
+                <li>
+                    Centralized authorities can censor and shut down speech.
+                </li>
+                <br />
+                <li>
+                    Reliance on a central authority means upstream problems affect downstream consumers (e.g. AWS going down means most of the internet goes down with it)
+                </li>
+            </ul>
+            <br />
+            
+            <p>
+                <br/>
+             On the other hand, decentralization brings about the opposite benefits.
+            </p>
+          <div>
+              <ul>
+                <li>
+                   No censorship as there is no single authority or middleman that can censor you.
+                </li>
+                <br />
+                <li>
+                    No downtime as the overall network is running across 1000's of nodes across the globe.
+                </li>
+                <br />
+                <li>
+                  Highly attack resistant making it infeasible to manipulate or destroy data
+                </li>
+                
+            </ul>
+          </div>
+        <br />
+            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                use Cases
+            </h2>
+            
+            <div>
+                <ul>
+                    <li>Cryptocurrency
+
+</li>
+                    <li>Smart Contracts</li>
+                    <li>
+Decentralized Finance</li>
+                    <li>
+Gaming
+</li>
+                    <li>Supply Chain Tracking</li>
+                    <li>
+Counterfeiting Protection</li>
+                    <li>Data Privacy</li>
+                    <li>Decentralized Governance</li>
+                    <li>Verifiable ownership of assets
+
+and many more...</li>
+                </ul>
+            </div>
+             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Resources
+            </h2>
+            <p>
+                To learn more about blockchains, we highly suggest the following resources:
+            </p>
+            <a href='https://www.youtube.com/watch?v=bBC-nXj3Ng4' className='' >
+                <p className='text-blue-500 underline'>But how does bitcoin actually work? by 3Blue1Brown</p>
+            </a>
+            <a href='https://andersbrownworth.com/blockchain/'>
+                <p className='text-blue-500 underline'>Blockchain Demo by Anders Brownworth</p>
+            </a>
+            <br />
+           <div className='flex justify-between items-center hover:text-blue-700 hover:text-underline '>
              <div className=''>
              <button  onClick={backclickHandler}
         class="  transition-all focus-outline-none   flex items-center justify-center  border border-transparent text-base font-medium rounded-sm text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 h-10 cursor-pointer"

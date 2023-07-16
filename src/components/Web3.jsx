@@ -16,19 +16,25 @@ const Web3 = () => {
     <div className=" min-h-[100px] leading-relaxed bg-gray-700">
         <div className=' text- dark:text-gray-50 p-4 px-64 '>
             <h1 id='started with programming' className=' font-extrabold text-4xl lg:text-5xl '>
-               Started With Programming
+               Intro to Web3.0
             </h1>
             <p>
                 <br/>
                 <br />
             </p>
             <h1 id='How to get started with programming' className=' font-extrabold text-2xl lg:text-3xl '>
-              How to get Started With Programming ??
+              What is Web3.0 ??
             </h1>
             <p>
                 <br/>
-                To get started as a Web3 developer, we need some background knowledge of Web2. Whether you're interested in creating smart contracts, dev tooling, protocol level development, AI image generation, or anything else - there are a lot of topics that have existed for decades that are still highly relevant and useful. A large part of what you would like to do today if you're reading this is learning how to build on top of web technologies - things that a user can access through a web browser.
+               In this module we'll explore what the term 'web3' means. It’s probably most helpful to think about Web3 in the context of previous internet paradigms, Web1 and Web2.
+
+
             </p>
+            <br />
+            <h1 id='How to get started with programming' className=' font-extrabold text-2xl lg:text-3xl '>
+              Web1 (1980’s - early 2000’s)
+            </h1>
             <p>
                 <br/>
                 <br />

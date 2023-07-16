@@ -164,11 +164,11 @@ function MainPage() {
         <Link to="/blockchain">
             <div className="
            overflow-hidden hover:bg-gray-500">
-            <div className="p-4">
+            <div className="p-4 hover:outline-white ">
               <h3 className="text-xl font-bold mb-2 font-serif">What is Blockchain ??</h3>
               
             </div>
-             <div className="flex flex-col gap-2">
+             <div className="flex flex-col gap-2 ">
               <img src= {blockchain}  className="w-[360px] h-[250px]" alt="blockchain" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
