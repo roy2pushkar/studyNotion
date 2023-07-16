@@ -14,6 +14,7 @@ import MainPage from "./components/MainPage";
 import BasicProgrammingQuiz from "./components/BasicProgrammingQuiz";
 import BasicProgramming from "./components/BasicProgramming";
 import BlockChain from "./components/BlockChain";
+import ConnectWallet from "./components/ConnectWallet";
 
 function App() {
   return (

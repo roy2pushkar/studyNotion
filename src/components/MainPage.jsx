@@ -9,9 +9,11 @@ import heroimage from '../images/heroimage.jpg'
 import crypto from '../images/crypto.jpg';
 import blockchain from '../images/blockchain.jpg';
 import metamask from '../images/metamask.jpg';
-import solidity from '../images/solidity.jpg'
-import web3 from '../images/web3.jpg'
-import programming from '../images/programming.jpg'
+import solidity from '../images/solidity.jpg';
+import web3 from '../images/web3.jpg';
+import programming from '../images/programming.jpg';
+import  { useEffect, useState } from 'react';
+import Web3 from 'web3';
 
 function MainPage() {
   const navigate = useNavigate();
@@ -34,61 +36,107 @@ function MainPage() {
   function frontendclickHandler() {
      navigate("/frontend");
   }
+  const [web3, setWeb3] = useState(null);
+  const [accounts, setAccounts] = useState([]);
+
+  useEffect(() => {
+    connectWeb3();
+  }, []);
+
+  const connectWeb3 = async () => {
+    if (typeof window.ethereum !== 'undefined' && typeof window.ethereum.request === 'function') {
+      try {
+        const provider = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const web3Instance = new Web3(provider);
+        setWeb3(web3Instance);
+        subscribeToAccountChanges(web3Instance);
+      } catch (error) {
+        console.error('Error connecting to Web3:', error);
+      }
+    }
+     else { console.warn('Web3 provider not found or does not support request method'); 
+    }
+  };
+
+  const subscribeToAccountChanges = (web3Instance) => {
+    web3Instance.eth.getAccounts()
+      .then((accounts) => {
+        setAccounts(accounts);
+      });
+
+    window.ethereum.on('accountsChanged', (updatedAccounts) => {
+      setAccounts(updatedAccounts);
+    });
+  };
+ 
   return (
     <div className="MainPage">
     <div className="sticky rounded-md outline-purple-200 shadow-white ">
-       <nav className="  bg-purple-400  ">
-        <div className="  flex justify-between items-center p-8 mx-6">
-          <div>
-            <a href="#" className="text-3xl font-extrabold">
-              StudyNotion
-            </a>
-          </div>
-        
-            <div className="flex gap-4 mx-6 justify-between items-center">
-            <a href="#home" className="hover:text-gray-600 hover:font-semibold">
-              Home
-            </a>
-            <a href="#about-us" className="hover:text-gray-600 hover:font-semibold">
-              About
-            </a>
-            <a href="#courses" className="hover:text-gray-600 hover:font-semibold">
-              Courses
-            </a>
-            <a
-              href="#contact-us"
-              className="hover:text-gray-600 hover:font-semibold"
-            >
-              Contact
-            </a>
-            <div>
-          <img src= {dark}  className=" cursor-pointer " alt="day-img" /> 
-          </div>
-          </div>
-        
-         
+      <nav className="bg-purple-400">
+  <div className="flex justify-between items-center p-8 mx-6">
+    <div>
+      <a href="#" className="text-3xl font-extrabold">
+        StudyNotion
+      </a>
+    </div>
+
+    <div className="flex gap-4 mx-6 justify-between items-center">
+      <a href="#home" className="hover:text-gray-600 hover:font-semibold">
+        Home
+      </a>
+      <a href="#about-us" className="hover:text-gray-600 hover:font-semibold">
+        About
+      </a>
+      <a href="#courses" className="hover:text-gray-600 hover:font-semibold">
+        Courses
+      </a>
+      <a
+        href="#contact-us"
+        className="hover:text-gray-600 hover:font-semibold"
+      >
+        Contact
+      </a>
+      <div>
+        <img src={dark} className="cursor-pointer" alt="day-img" />
+      </div>
+
+      {/* Connect Wallet Button */}
+      {web3 ? (
+        <div>
+          <p>Connected to Web3</p>
+          <p>Wallet Address: {accounts[0]}</p>
         </div>
-        <div className="" >
-          <div className="md:hidden ">
-            <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-400 hover:border-gray-400">
-            <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
-            </svg>
-          </button>
-          </div>
-         
-          <div className="md:hidden">
+      ) : (
         
-          <img src= {day}  className="" alt="day-img" /> 
-          
-          </div>
-        </div>
-      </nav>
+        <button onClick={connectWeb3}
+        class="w-full  transition-all focus-outline-none cursor-pointer  flex items-center justify-center px-8 py-3 mb-4 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10"
+        type="button">
+        Connect Wallet
+      </button>
+      )}
+
+    </div>
+  </div>
+  <div className="">
+    <div className="md:hidden">
+      <button className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-400 hover:border-gray-400">
+        <svg
+          className="fill-current h-3 w-3"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu</title>
+          <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
+        </svg>
+      </button>
+    </div>
+
+    <div className="md:hidden">
+      <img src={day} className="" alt="day-img" />
+    </div>
+  </div>
+</nav>
+
     </div>
       <div className="Home flex justify-between p-8 items-center bg-purple-500">
         <div className="uppercase font-extrabold text-3xl">
