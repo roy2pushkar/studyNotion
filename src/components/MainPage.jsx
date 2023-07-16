@@ -189,7 +189,7 @@ function MainPage() {
         <div className="
            overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold mb-2 font-serif  ">Basic Programming</h3>
+              <h3 className="text-xl font-bold m-2 font-serif  ">Basic Programming</h3>
              
             </div>
             <div className="flex flex-col gap-2">

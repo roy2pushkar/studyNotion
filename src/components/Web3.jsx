@@ -38,80 +38,117 @@ const Web3 = () => {
             <p>
                 <br/>
                 <br />
-                In this lesson, I will go over a few key terminologies you will definitely come across as you begin your journey, but more importantly talk about the mindset you should have as a developer who is just getting started on this journey.
+               The first phase of the Internet, Web1, was mainly about providing the everyday consumer with online content and information.
+            </p>
+            <p>
+                <br/>
+              As consumers could only read information or content online, and not yet interact with it, Web1 was incredibly static.
+
+            </p>
+            <p>
+                <br/>
+               When you think about Web1, think Internet Explorer, Yahoo, or Netscape. While web1 was read-only, the companies we associate with web1 were built on open protocols (meaning pretty much any person or organization could build on the internet and know they were subject to the same rules as the next person or organization).
+
             </p>
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Frontend Technologies
+                What is Web2?
             </h2>
+            <br />
             <p>
-               A frontend is the interface with which a user interacts. On the web, the frontend refers to a website you can browse around, click on things, maybe even write stuff. Mobile apps and desktop apps are also valid examples of frontend interfaces. 
-            </p><p>
                 <br/>
-                For the purposes of this lesson, we're going to focus on web technologies. 
+              Web2 is the version of the internet most of us know and use today. Where Web1 was static and “read-only,” Web2 is “read-write,” and interactive. Under Web2, the internet became more usable: Web2 was dynamic and users could consume, interact with, and create content on the internet themselves.
+
             </p>
             <p>
                 <br/>
-                Have you ever thought about how no matter what web browser you're using - Chrome, Firefox, Safari, Edge, etc - a website looks the exact same on all of them? 
+              Along the way, the internet became largely dominated by the four behemoths we know today as Apple, Amazon, Facebook, and Google. Web2 also saw an explosion in the use of smartphones, and most of internet use was through mobile apps and hardware built by these companies. While this meant more people could participate in the internet, it also meant the internet was becoming increasingly controlled by the leading digital platforms.
+
             </p>
             <p>
                 <br/>
-                This happens because of Web Standards. An organization known as the W3C (World Wide Web Consortium) sets standards, a set of explicit rules, that all companies such as Google, Microsoft, Mozilla, Apple, etc. must follow when building things like web browsers across different devices and across different operating systems. 
-            </p>
-            <p>
-                <br/>
-                Particularly, these standards are set around the three key things every web developer needs to have some familiarity with - HTML, CSS, and JavaScript.
-            </p>
-            <p>
-                <br/>
-               HTML is the language used to visually place elements on your screen. Things like this paragraph you're reading right now, things like buttons, things like a dropdown menu. You visually place elements across the screen using HTML.
+              Why is this a problem? In the centralized internet we know today, Apple can take a 30% cut on all paid-app downloads and in-app purchases, Twitter and Facebook can de-platform the President of the United States, and the everyday consumer has less privacy, security, and control over their online information than ever before.
 
 
             </p>
             <p>
                 <br/>
-               CSS is a styling language used to add styles and your own custom flair to these elements. By default, HTML elements look boring and plain. Remember those old 90s websites? Yeah, that was plain HTML. CSS allows you to customize things about HTML elements. Such as making a button round instead of a rectangle, changing the font of a paragraph, having some bold text or underlined text, and so on.
+             We also see a lot of data breaches happening all across Web2 leading to reduced security and privacy for one's personal data. When a user's data gets breached it's easy for them to become a victim of identity theft, personal attacks etc.
+
+
+
             </p>
-            <p>
-                <br/>
-                And finally, to tie it all together comes JavaScript. JavaScript is arguably the most important aspect of building on web technologies. It is a fully functional programming language that is used to add real functionality to your website. 
-            </p>
-            <p>
-                <br/>
-               With HTML and CSS, you can place elements on a screen and make them look nice - but they won't actually do anything. Your button wouldn't actually do anything if you click it, more posts on Instagram will not load as you kept scrolling down, and so on.
-            </p>
-            <p>
-                <br/>
-               JavaScript allows you to add real interactivity and functionality to your websites. It is, without a doubt, the language of the web - and you will find that most of the lessons here on LearnWeb3 will use JavaScript in one way or the other. A website without JavaScript has no functionality other than letting you look at things a certain way. 
-            </p>
-            <p>
-                <br/>
-                Anyway, going back to the W3C - the W3C sets standards around how a web browser like Chrome must understand, run, and display the code being written by a web developer using HTML, CSS, and JavaScript. Because of those standards, all browsers across all devices and all operating systems work similarly and you do not have to worry about it. That's the power of building on web technologies. Unlike building mobile apps, where iOS and Android differ a lot from each other, or how building for Windows is very different from building for macOS or building for Linux - the web allows you to write your code once, and have it work everywhere - and we are going to leverage that.
-            </p>
-            <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Backend Technologies
+                What is Web3?
             </h2>
             <p>
-              The backend refers to that part of a software that allows it to operate and cannot be directly accessed by the user. Most private data, business logic, data processing, etc. happens on the backend, and the frontend is to provide a visual representation of that data.
+              Web3, the future internet we’re moving towards, is a decentralized internet. Under Web3, the internet is shared online and governed by the collective “we,” rather than owned by centralized entities. The Web3 world is one that has open-source protocols at its foundation. Web3 is about rearchitecting internet services and products so that they benefit people rather than entities.
+
+
             </p><p>
                 <br/>
-                For example, consider Instagram - Instagram has billions and billions of photos and videos on their platform. Some of those photos are posted by private accounts, photos that only people who follow that private account can see and anyone else cannot. The filtering of photos required for Instagram to show you your feed on the timeline vs. what they actually have available to them happens on their backend. It is important the backend is not directly accessible by users because otherwise private data can be leaked.
+               Web3 enhances the web we know today by making it decentralized, distributed, open, trustless and permissionless.
             </p>
+            
+                
+               <ul>
+                <li>
+                    <p>
+                <br/>
+               It is getting built such that everything would happen in a decentralized distributed way giving no central authority access to control the system.
+            </p>
+                </li>
+                <li>
+                    <p>
+                <br/>
+              ‘Open’ as it would be open sourced software built by an open and accessible community of developers and executed in full view of the world.
+            </p>
+                </li>
+                <li>
+                    <p>
+                <br/>
+              ‘Trustless’ in that the network itself allows participants to interact publicly or privately without a trusted third party.
+            </p>
+                </li>
+                <li>
+                    <p>
+                <br/>
+              ‘Permissionless’ in that anyone, both users and suppliers, can participate without authorization from a governing body.
+            </p>
+                </li>
+               </ul>
+                 <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Summary
+            </h2>
+             <p>
+                <br/>
+             Web1: Read 📖
+            </p>
+             <p>
+                <br/>
+              Web2: Read-Write 📖 🖊️
+            </p>
+             <p>
+                <br/>
+             Web3: Read-Write-Own 📖 🖊️ 🔑
+            </p>
+             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Resources
+            </h2>
             <p>
-                <br/>
-               If you've ever read news about some website getting hacked and user's private information - their address, names, credit cards, etc. - being leaked, that is because there was some bug in their backend that allowed a malicious actor to directly gain access to it. 
+                To learn more about blockchains, we highly suggest the following resources:
             </p>
-            <p>
-                <br/>
-               It is our goal as software developers to build secure backends for our services and only allow the user access to information and data they should have access to. 
-            </p>
-           <p>
-                <br/>
-                Backend services can be written in a variety of programming languages - JavaScript, Rust, Go, Python, C#, and many more. As you're starting your journey however, since you're going to be learning JavaScript anyway for the frontend, you might as well use JavaScript for the backend as well. While each programming language has it's own pros and cons, they are not enough for a beginner to try to master multiple different languages and paradigms at once. I highly recommend that if you want to build on web technologies, you choose JavaScript because it works on both ends of the tech stack.
-            </p>
+            <a href='https://www.freecodecamp.org/news/what-is-web3/' className='' >
+                <p className='text-blue-500 underline'>What is Web3</p>
+            </a>
+            <a href='https://www.xenonstack.com/blog/web3-features-and-challenges'>
+                <p className='text-blue-500 underline'>Web3 Features and its Comparison Web3 vs Web2</p>
+            </a>
+            <br />
             <br />
            <div className='flex justify-between items-center'>
              <div className=''>
