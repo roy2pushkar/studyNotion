@@ -70,7 +70,7 @@ function MainPage() {
   };
  
   return (
-    <div className="MainPage">
+    <div className="MainPage bg-gray-400">
     <div className="sticky rounded-md outline-purple-200 shadow-white ">
       <nav className="bg-purple-400">
   <div className="flex justify-between items-center p-8 mx-6">
@@ -180,7 +180,7 @@ function MainPage() {
     </div>
   
     <div className="CourseTopic">
-     <section className="bg-purple-600">
+     <section className="">
       <div id="courses" class="bg-gray-300 p-8">
         <h2 className="text-2xl font-extrabold text-center uppercase">Courses</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -189,11 +189,11 @@ function MainPage() {
         <div className="
            overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold m-2 font-serif  ">Basic Programming</h3>
+              <h3 className="text-xl font-bold m-2 font-serif text-center ">Basic Programming</h3>
              
             </div>
-            <div className="flex flex-col gap-2">
-              <img src= {programming}  className="w-[360px] h-[250px]" alt="intro-to-programming" /> 
+            <div className="flex flex-col gap-2 m-8">
+              <img src= {programming}  className="w-[360px] h-[250px] rounded-md" alt="intro-to-programming" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -213,11 +213,11 @@ function MainPage() {
             <div className="
            overflow-hidden hover:bg-gray-500">
             <div className="p-4 hover:outline-white ">
-              <h3 className="text-xl font-bold mb-2 font-serif">What is Blockchain ??</h3>
+              <h3 className="text-xl font-bold mb-2 font-serif text-center ">What is Blockchain ??</h3>
               
             </div>
-             <div className="flex flex-col gap-2 ">
-              <img src= {blockchain}  className="w-[360px] h-[250px]" alt="blockchain" /> 
+             <div className="flex flex-col gap-2 m-8 ">
+              <img src= {blockchain}  className="w-[360px] h-[250px] rounded-md" alt="blockchain" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -236,11 +236,11 @@ function MainPage() {
           <div className=" 
            overflow-hidden hover:bg-gray-500">
             <div class="p-4">
-              <h3 className="text-xl font-bold mb-2 font-serif ">What is Web3.0 ??</h3>
+              <h3 className="text-xl font-bold mb-2 font-serif text-center ">What is Web3.0 ??</h3>
               
             </div>
-             <div className="flex flex-col gap-2">
-              <img src= {web3}  className="w-[360px] h-[250px]" alt="web3" /> 
+             <div className="flex flex-col gap-2 m-8">
+              <img src= {web3}  className="w-[360px] h-[250px] rounded-md" alt="web3" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -258,11 +258,11 @@ function MainPage() {
            overflow-hidden hover:bg-gray-500">
             <div className="p-4">
               <h3 className
-            ="text-xl font-bold mb-2 font-serif">What is Metamask ??</h3>
+            ="text-xl font-bold mb-2 font-serif text-center ">What is Metamask ??</h3>
              
             </div>
-             <div className="flex flex-col gap-2">
-              <img src= {metamask}  className="w-[360px] h-[250px]" alt="metamask" /> 
+             <div className="flex flex-col gap-2 m-8">
+              <img src= {metamask}  className="w-[360px] h-[250px] rounded-md" alt="metamask" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -279,11 +279,11 @@ function MainPage() {
           <div className=" 
            overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 className="text-xl font-bold mb-2 font-serif">Setting up a Crypto Wallet </h3>
+              <h3 className="text-xl font-bold mb-2 font-serif text-center">Setting up a Crypto Wallet </h3>
               
             </div>
-             <div className="flex flex-col gap-2">
-              <img src= {crypto}  className="w-[360px] h-[250px]" alt="crypto" /> 
+             <div className="flex flex-col gap-2 m-8">
+              <img src= {crypto}  className="w-[360px] h-[250px] rounded-md" alt="crypto" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -301,11 +301,11 @@ function MainPage() {
           <div className="
            overflow-hidden hover:bg-gray-500">
             <div className="p-4">
-              <h3 class="text-xl font-bold mb-2 font-serif">Intro to Solidity</h3>
+              <h3 class="text-xl font-bold mb-2 font-serif text-center">Intro to Solidity</h3>
              
             </div>
-             <div className="flex flex-col gap-2">
-              <img src= {solidity}  className="w-[360px] h-[250px]" alt="solidity" /> 
+             <div className="flex flex-col gap-2 m-8">
+              <img src= {solidity}  className="w-[360px] h-[250px] rounded-md" alt="solidity" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
