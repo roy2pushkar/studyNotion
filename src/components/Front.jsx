@@ -24,8 +24,8 @@ import { useNavigate } from "react-router-dom";
             </h1>
           </div>
           <div className="p-4">
-            <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat cum repellat molestiae enim, libero unde repellendus vel dolor pariatur quae quod, placeat officiis facilis repudiandae deserunt? Dolores, maiores tempora.
+            <p className="text-white font-bold text-lg">
+              "Unlocking the Future with Web3: Embrace Decentralization, Empower Global Connectivity!"
             </p>
           </div>
         </div>
