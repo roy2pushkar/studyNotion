@@ -111,6 +111,20 @@ and many more...
             </p>
           
          
+            
+            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Resources
+            </h2>
+            <p>
+                To learn more about Etherum, we highly suggest the following resources:
+            </p>
+            <a href='https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/' className='' >
+                <p className='text-blue-500 underline'>tps://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/</p>
+            </a>
+            <a href='https://ethereum.org/en/whitepaper/'>
+                <p className='text-blue-500 underline'>https://ethereum.org/en/whitepaper/</p>
+            </a>
             <br />
            <div className='flex justify-between items-center'>
              <div className=''>

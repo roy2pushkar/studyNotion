@@ -5,7 +5,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import Web3 from "./components/Web3";
-import Metamask from "./components/Metamask";
+import Etherum from "./components/Etherum";
 import Solidity from "./components/Solidity";
 import Crypto from "./components/Crypto";
 
@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/solidity" element={<Solidity />} />
 
-        <Route path="/metamask" element={<Metamask />} />
+        <Route path="/etherum" element={<Etherum />} />
 
         <Route path="/web3" element={<Web3 />} />
 

@@ -16,19 +16,36 @@ const Crypto = () => {
     <div className=" min-h-[100px] leading-relaxed bg-gray-700">
         <div className=' text- dark:text-gray-50 p-4 px-64 '>
             <h1 id='started with programming' className=' font-extrabold text-4xl lg:text-5xl '>
-               Started With Programming
+             Setting up a crypto wallet
             </h1>
             <p>
                 <br/>
                 <br />
             </p>
-            <h1 id='How to get started with programming' className=' font-extrabold text-2xl lg:text-3xl '>
-              How to get Started With Programming ??
+            <h1 id='' className=' font-extrabold text-2xl lg:text-3xl '>
+          Introduction
+            </h1>
+                        <p>
+                          To understand crypto wallets fully, we have to understand some concepts about the blockchain, which will help us in understanding how a wallet aids us. Let's start off.
+                <br/>
+                
+            </p>
+            <h1 id='' className=' font-extrabold text-2xl lg:text-3xl '>
+           What is an address? 🤨
             </h1>
             <p>
                 <br/>
-                To get started as a Web3 developer, we need some background knowledge of Web2. Whether you're interested in creating smart contracts, dev tooling, protocol level development, AI image generation, or anything else - there are a lot of topics that have existed for decades that are still highly relevant and useful. A large part of what you would like to do today if you're reading this is learning how to build on top of web technologies - things that a user can access through a web browser.
+                An address is a string of text generated using cryptography to represent your account on the blockchain. This address can be shared publicly with others, and is completely safe to do so. You can send and receive funds from and to your wallet address. Basically, the address is your unique identifier on the blockchain and represents your 'account.' 
             </p>
+            <br />
+            <div className='w-full bg-white text-black '>
+              <p className='text-gray-500 mr-2'>
+                An example of an Ethereum address is :
+              </p>
+              <p className='text-gray-500 mr-2'>
+                 0x01573Df433484fCBe6325a0c6E051Dc62Ab107D1
+              </p>
+            </div>
             <p>
                 <br/>
                 <br />
