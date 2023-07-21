@@ -46,59 +46,85 @@ const Crypto = () => {
                  0x01573Df433484fCBe6325a0c6E051Dc62Ab107D1
               </p>
             </div>
+            
+            
+            <br />
+            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+               What are private keys? 🔐
+            </h2>
+            <p>
+              A private key is the counterpart to an address. Each address has an associated private key. As the name suggests though, this is meant to be kept private and not shared with anyone.
+            </p><p>
+                <br/>
+               You can think of it like a password, a really strong one, that contains a bunch of letters and numbers that allow you to prove ownership over your address. Anyone who has the private key has access to make transactions from your address i.e. send money from your address to theirs.
+            </p>
+            <div className='w-full bg-white text-black '>
+              <p className='text-gray-500 mr-2'>
+                  A private key looks something like this: 
+              </p>
+              <p className='text-gray-500 mr-2'>
+E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262
+
+
+              </p>
+            </div>
             <p>
                 <br/>
-                <br />
-                In this lesson, I will go over a few key terminologies you will definitely come across as you begin your journey, but more importantly talk about the mindset you should have as a developer who is just getting started on this journey.
+               If you think of your address as a username for your account, the private key is its password. Therefore sharing your address is okay, but never ever share your private key or someone might steal your funds - and then nothing can be done about it.
+            </p>
+            <div className='w-full bg-white rounded-md text-black '>
+              <p className='text-gray-500 mr-2'>
+                 <strong>Caution</strong>: Since blockchains are decentralized, there is no 'forgot password' option. If you lose your private key, you lose access to your account. Similarly, if someone steals your private key and steals your funds, you cannot do anything about it. It is VERY important to keep this private key safe.
+              </p>
+            
+            </div>
+            <p>
+                <br/>
+               For developers, we often use the private key as part of our codebase to perform certain transactions, such as deploying our own smart contracts to the Ethereum network. While you are still learning, we highly suggest you use a separate account entirely for development than you use for storing any sort of funds. Unfortunately, beginner developers often use the same account they have funds on, and accidentally share their codebase publicly - and hackers can see your private key in the codebase and end up stealing funds. Please take that as a tale of caution.
             </p>
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Frontend Technologies
+              What is a seed phrase? 👮‍♀️
             </h2>
             <p>
-               A frontend is the interface with which a user interacts. On the web, the frontend refers to a website you can browse around, click on things, maybe even write stuff. Mobile apps and desktop apps are also valid examples of frontend interfaces. 
-            </p><p>
                 <br/>
-                For the purposes of this lesson, we're going to focus on web technologies. 
+               A seed phrase is like a master password - the password of passwords!
             </p>
             <p>
                 <br/>
-                Have you ever thought about how no matter what web browser you're using - Chrome, Firefox, Safari, Edge, etc - a website looks the exact same on all of them? 
+              Think of a password manager, something like Lastpass or 1Password. These applications, within them, store your usernames and passwords for other apps securely, and themselves have a password. So, if someone hacks your password manager, they also get access to all accounts stored within it.
             </p>
             <p>
                 <br/>
-                This happens because of Web Standards. An organization known as the W3C (World Wide Web Consortium) sets standards, a set of explicit rules, that all companies such as Google, Microsoft, Mozilla, Apple, etc. must follow when building things like web browsers across different devices and across different operating systems. 
+              A crypto wallet is kind of like a password manager, where you can manage multiple blockchain accounts. If the private key is the password to a single account, the seed phrase is kind of like the master password for that wallet.
             </p>
             <p>
                 <br/>
-                Particularly, these standards are set around the three key things every web developer needs to have some familiarity with - HTML, CSS, and JavaScript.
+               When you create a new crypto wallet, you will be presented with a seed phrase you should absolutely securely store and back up. Any new accounts you generate from inside that wallet will all be linked to the seed phrase. That one seed phrase will always generate the same accounts, with the same private keys and addresses for each.
             </p>
             <p>
                 <br/>
-               HTML is the language used to visually place elements on your screen. Things like this paragraph you're reading right now, things like buttons, things like a dropdown menu. You visually place elements across the screen using HTML.
-
-
+             So for example if you created a wallet, and then created 5 accounts within it, your seed phrase manages all 5. If you wanted to switch to a new wallet, you could either import the 5 wallets individually - by using their individual private keys - or import using the seed phrase, and it would regenerate the same 5 accounts.
+            </p>
+            <div className='w-full bg-white rounded-md text-black '>
+              <p className='text-gray-500 mr-2'>
+                  An example of a seed phrase is: dove lumber quote board young robust kit invite plastic regular skull history
+              </p>
+            
+            </div>
+             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+              What is a crypto wallet then? 😛
+            </h2>
+            <p>
+                <br/>
+               Crypto wallets are a manager for your accounts, and mainly their private keys. They also allow you to interact with decentralized applications, and allow connecting to a dApp through the wallet, acting as a single sign-on for all applications built on the blockchain.
             </p>
             <p>
                 <br/>
-               CSS is a styling language used to add styles and your own custom flair to these elements. By default, HTML elements look boring and plain. Remember those old 90s websites? Yeah, that was plain HTML. CSS allows you to customize things about HTML elements. Such as making a button round instead of a rectangle, changing the font of a paragraph, having some bold text or underlined text, and so on.
-            </p>
-            <p>
-                <br/>
-                And finally, to tie it all together comes JavaScript. JavaScript is arguably the most important aspect of building on web technologies. It is a fully functional programming language that is used to add real functionality to your website. 
-            </p>
-            <p>
-                <br/>
-               With HTML and CSS, you can place elements on a screen and make them look nice - but they won't actually do anything. Your button wouldn't actually do anything if you click it, more posts on Instagram will not load as you kept scrolling down, and so on.
-            </p>
-            <p>
-                <br/>
-               JavaScript allows you to add real interactivity and functionality to your websites. It is, without a doubt, the language of the web - and you will find that most of the lessons here on LearnWeb3 will use JavaScript in one way or the other. A website without JavaScript has no functionality other than letting you look at things a certain way. 
-            </p>
-            <p>
-                <br/>
-                Anyway, going back to the W3C - the W3C sets standards around how a web browser like Chrome must understand, run, and display the code being written by a web developer using HTML, CSS, and JavaScript. Because of those standards, all browsers across all devices and all operating systems work similarly and you do not have to worry about it. That's the power of building on web technologies. Unlike building mobile apps, where iOS and Android differ a lot from each other, or how building for Windows is very different from building for macOS or building for Linux - the web allows you to write your code once, and have it work everywhere - and we are going to leverage that.
+               At LearnWeb3 as well, you can go into the Settings and connect your crypto wallet (after you have set it up), which will let us know what your address is so we can send you some sick NFTs when you graduate from our tracks!
             </p>
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
