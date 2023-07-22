@@ -16,38 +16,60 @@ const Solidity = () => {
     <div className=" min-h-[100px] leading-relaxed bg-gray-700">
         <div className=' text- dark:text-gray-50 p-4 px-64 '>
             <h1 id='started with programming' className=' font-extrabold text-4xl lg:text-5xl '>
-               Started With Programming
+               Introduction to Solidity
             </h1>
             <p>
                 <br/>
                 <br />
             </p>
             <h1 id='How to get started with programming' className=' font-extrabold text-2xl lg:text-3xl '>
-              How to get Started With Programming ??
+              Let's start with Solidity
             </h1>
             <p>
                 <br/>
-                To get started as a Web3 developer, we need some background knowledge of Web2. Whether you're interested in creating smart contracts, dev tooling, protocol level development, AI image generation, or anything else - there are a lot of topics that have existed for decades that are still highly relevant and useful. A large part of what you would like to do today if you're reading this is learning how to build on top of web technologies - things that a user can access through a web browser.
+                <span>Solidity is an object-oriented, high-level language for implementing smart contracts. It is designed to target <a className='text-blue-500 underline' href='https://coinmarketcap.com/alexandria/glossary/ethereum-virtual-machine-evm'>Ethereum Virtual Machine(EVM).</a></span>
             </p>
             <p>
                 <br/>
                 <br />
-                In this lesson, I will go over a few key terminologies you will definitely come across as you begin your journey, but more importantly talk about the mindset you should have as a developer who is just getting started on this journey.
+               It is statically typed, supports inheritance, libraries and complex user-defined types among other features.
             </p>
             <br />
             <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Frontend Technologies
+                Building in Solidity
             </h2>
+            <br />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                initializing Smart Contracts
+            </h2>
+            <br />
+            <div className='bg-black text-white'>
+              <p>
+                pragma solidity ^0.8.19;
+              </p>
+              <br />
+              <p>// Start by creating a contract named HelloWorld</p>
+              <p>
+                contract HelloWorld  { }
+
+}
+              </p>
+            </div>
+            <br />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Variables and Types
+            </h2>
+            <br />
             <p>
-               A frontend is the interface with which a user interacts. On the web, the frontend refers to a website you can browse around, click on things, maybe even write stuff. Mobile apps and desktop apps are also valid examples of frontend interfaces. 
+              There are 3 types of variables in Solidity
             </p><p>
                 <br/>
-                For the purposes of this lesson, we're going to focus on web technologies. 
+               1 . Local
             </p>
             <p>
-                <br/>
-                Have you ever thought about how no matter what web browser you're using - Chrome, Firefox, Safari, Edge, etc - a website looks the exact same on all of them? 
+               Declared inside a function and are not stored on blockchain 
+               
             </p>
             <p>
                 <br/>
@@ -55,58 +77,53 @@ const Solidity = () => {
             </p>
             <p>
                 <br/>
-                Particularly, these standards are set around the three key things every web developer needs to have some familiarity with - HTML, CSS, and JavaScript.
+               2 . State
             </p>
             <p>
-                <br/>
-               HTML is the language used to visually place elements on your screen. Things like this paragraph you're reading right now, things like buttons, things like a dropdown menu. You visually place elements across the screen using HTML.
+                Declared outside a function to maintain the state of the smart contract
 
 
             </p>
             <p>
-                <br/>
-               CSS is a styling language used to add styles and your own custom flair to these elements. By default, HTML elements look boring and plain. Remember those old 90s websites? Yeah, that was plain HTML. CSS allows you to customize things about HTML elements. Such as making a button round instead of a rectangle, changing the font of a paragraph, having some bold text or underlined text, and so on.
+               Stored on the blockchain
+            </p>
+            <p>
+                
+              3. Global
+            </p>
+            <p>
+             Provide information about the blockchain. They are injected by the Ethereum Virtual Machine during runtime.   
+            </p>
+            <p>
+              Includes things like transaction sender, block timestamp, block hash, etc.  
+            </p>
+            <p>
+                <a href='https://docs.soliditylang.org/en/v0.8.19/units-and-global-variables.html' className=' text-blue-500 underline' >Examples of global variables</a>
             </p>
             <p>
                 <br/>
-                And finally, to tie it all together comes JavaScript. JavaScript is arguably the most important aspect of building on web technologies. It is a fully functional programming language that is used to add real functionality to your website. 
+               The scope of variables is defined by where they are declared, not their value. Setting a local variable's value to a global variable does not make it a global variable, as it is still only accessible within it's scope.
             </p>
-            <p>
-                <br/>
-               With HTML and CSS, you can place elements on a screen and make them look nice - but they won't actually do anything. Your button wouldn't actually do anything if you click it, more posts on Instagram will not load as you kept scrolling down, and so on.
-            </p>
-            <p>
-                <br/>
-               JavaScript allows you to add real interactivity and functionality to your websites. It is, without a doubt, the language of the web - and you will find that most of the lessons here on LearnWeb3 will use JavaScript in one way or the other. A website without JavaScript has no functionality other than letting you look at things a certain way. 
-            </p>
-            <p>
-                <br/>
-                Anyway, going back to the W3C - the W3C sets standards around how a web browser like Chrome must understand, run, and display the code being written by a web developer using HTML, CSS, and JavaScript. Because of those standards, all browsers across all devices and all operating systems work similarly and you do not have to worry about it. That's the power of building on web technologies. Unlike building mobile apps, where iOS and Android differ a lot from each other, or how building for Windows is very different from building for macOS or building for Linux - the web allows you to write your code once, and have it work everywhere - and we are going to leverage that.
-            </p>
-            <br />
-            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Backend Technologies
+               References
             </h2>
-            <p>
-              The backend refers to that part of a software that allows it to operate and cannot be directly accessed by the user. Most private data, business logic, data processing, etc. happens on the backend, and the frontend is to provide a visual representation of that data.
-            </p><p>
-                <br/>
-                For example, consider Instagram - Instagram has billions and billions of photos and videos on their platform. Some of those photos are posted by private accounts, photos that only people who follow that private account can see and anyone else cannot. The filtering of photos required for Instagram to show you your feed on the timeline vs. what they actually have available to them happens on their backend. It is important the backend is not directly accessible by users because otherwise private data can be leaked.
-            </p>
-            <p>
-                <br/>
-               If you've ever read news about some website getting hacked and user's private information - their address, names, credit cards, etc. - being leaked, that is because there was some bug in their backend that allowed a malicious actor to directly gain access to it. 
-            </p>
-            <p>
-                <br/>
-               It is our goal as software developers to build secure backends for our services and only allow the user access to information and data they should have access to. 
-            </p>
-           <p>
-                <br/>
-                Backend services can be written in a variety of programming languages - JavaScript, Rust, Go, Python, C#, and many more. As you're starting your journey however, since you're going to be learning JavaScript anyway for the frontend, you might as well use JavaScript for the backend as well. While each programming language has it's own pros and cons, they are not enough for a beginner to try to master multiple different languages and paradigms at once. I highly recommend that if you want to build on web technologies, you choose JavaScript because it works on both ends of the tech stack.
-            </p>
+            <a href='https://solidity-by-example.org/' className='' >
+                <p className='text-blue-500 underline'>Solidity By Example</p>
+            </a>
             <br />
+            <h2 id='frontend technologies' className='text-2xl font-semibold'>
+                Resources for Learning extra
+            </h2>
+            
+            <br />
+            <a href='https://cryptozombies.io/' className='' >
+                <p className='text-blue-500 underline'>Cryptozombies</p>
+            </a>
+            <a href='https://solidity-by-example.org/'>
+                <p className='text-blue-500 underline'>Solidity by ExampleSolidity docs</p>
+            </a>
+            <br />
+            
            <div className='flex justify-between items-center'>
              <div className=''>
              <button  onClick={backclickHandler}

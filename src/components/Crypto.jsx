@@ -127,28 +127,36 @@ E9873D79C6D87DC0FB6A5778633389F4453213303DA61F20BD67FC233AA33262
                At LearnWeb3 as well, you can go into the Settings and connect your crypto wallet (after you have set it up), which will let us know what your address is so we can send you some sick NFTs when you graduate from our tracks!
             </p>
             <br />
-            <hr className='h-0.5 w-full bg-slate-600 dark:bg-gray-800 my-4' />
             <h2 id='frontend technologies' className='text-2xl font-semibold'>
-                Backend Technologies
+              Setting up a Wallet 🎉
+            </h2>
+            <br />
+            <h2 id='frontend technologies' className=' uppercase text-2xl font-semibold'>
+                Important
             </h2>
             <p>
-              The backend refers to that part of a software that allows it to operate and cannot be directly accessed by the user. Most private data, business logic, data processing, etc. happens on the backend, and the frontend is to provide a visual representation of that data.
-            </p><p>
-                <br/>
-                For example, consider Instagram - Instagram has billions and billions of photos and videos on their platform. Some of those photos are posted by private accounts, photos that only people who follow that private account can see and anyone else cannot. The filtering of photos required for Instagram to show you your feed on the timeline vs. what they actually have available to them happens on their backend. It is important the backend is not directly accessible by users because otherwise private data can be leaked.
+             Make sure to create a new wallet for development purposes only. <strong>Do NOT use your own wallet with live funds for any development purposes.</strong> Throughout this course we'll be expecting you to use this newly created development wallet whenever we mention to include the wallet details or its private keys.
+            </p>
+            <br/>
+            <h2 id='frontend technologies' className=' uppercase text-2xl font-semibold'>
+               Continuing 😎
+
+ 
+            </h2>
+            <p>
+             For Ethereum, there are a number of wallet options available. The easiest to get started using, and most developer friendly, are either Metamask or Coinbase Wallet.
             </p>
             <p>
                 <br/>
-               If you've ever read news about some website getting hacked and user's private information - their address, names, credit cards, etc. - being leaked, that is because there was some bug in their backend that allowed a malicious actor to directly gain access to it. 
+               Both are Ethereum crypto wallets that can be installed as browser extensions, or as a mobile apps. You can find the download links below. We suggest downloading any one of them, and setting it up, before proceeding with the track.
             </p>
-            <p>
-                <br/>
-               It is our goal as software developers to build secure backends for our services and only allow the user access to information and data they should have access to. 
-            </p>
-           <p>
-                <br/>
-                Backend services can be written in a variety of programming languages - JavaScript, Rust, Go, Python, C#, and many more. As you're starting your journey however, since you're going to be learning JavaScript anyway for the frontend, you might as well use JavaScript for the backend as well. While each programming language has it's own pros and cons, they are not enough for a beginner to try to master multiple different languages and paradigms at once. I highly recommend that if you want to build on web technologies, you choose JavaScript because it works on both ends of the tech stack.
-            </p>
+          <a href='https://metamask.io/download/' className='' >
+                <p className='text-blue-500 underline'>Download Metamask</p>
+            </a>
+            <a href='hhttps://www.coinbase.com/wallet'>
+                <p className='text-blue-500 underline'>Download Coinbase Wallet</p>
+            </a>
+            <br />
             <br />
            <div className='flex justify-between items-center'>
              <div className=''>
