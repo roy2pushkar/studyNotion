@@ -3,29 +3,46 @@ import React from 'react';
 import  { useState } from 'react';
 
 
+import 'tailwindcss/tailwind.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const BlockChainQuizPage = () => {
   const quizQuestions = [
     {
-      question: 'Question 1: What is the capital of France?',
+      question: 'Question 1: What is a frontend?',
       answers: {
-        a: 'Paris',
-        b: 'London',
-        c: 'Berlin',
-        d: 'Berlin'
+        a: 'The part of a website or application that users interact with directly',
+        b: 'The part of a website or application that runs on a server and is inaccessible to users',
+        c: 'The programming language that is used to build a website or application',
+        d: 'The database that stores personal user information such as their address and credit card information'
       },
       correctAnswer: 'a',
     },
     {
-      question: 'Question 2: Who painted the Mona Lisa?',
+      question: 'Question 2: What is a backend?',
       answers: {
-        a: 'Leonardo da Vinci',
-        b: 'Pablo Picasso',
-        c: 'Vincent van Gogh',
+        a: 'The part of a website or application that users interact with directly',
+        b: 'The part of a website or application that runs on a server and is inaccessible to users',
+        c: 'The programming language that is used to build a website or application',
       },
-      correctAnswer: 'a',
+      correctAnswer: 'b',
     },
+    {
+      question: 'Question 3: So, are you ready to start your journey?',
+      answers: {
+        a: 'Yes',
+        b: 'HELL YES!',
+        c: 'LETS DO IT!',
+        d: 'Nah'
+      },
+      correctAnswer: 'b',
+    },
+    
+    
+  
+   
+    
     // Add more questions...
   ];
 
@@ -141,6 +158,14 @@ const BlockChainQuizPage = () => {
     );
   };
 
+
+
+  const navigate = useNavigate();
+
+  
+   function backtoCourses(){
+    navigate('/mainpage')
+  }
   return (
     <div className='bg-slate-400 flex flex-col justify-center items-center h-screen '>
       <div className="max-w-md mx-auto p-8 bg-gray-300">
@@ -151,6 +176,11 @@ const BlockChainQuizPage = () => {
         <div className="mb-4">{displayQuizQuestion()}</div>
       )}
     </div>
+    <button  onClick={backtoCourses}
+        class="  transition-all focus-outline-none m-4  flex items-center justify-center  border border-transparent text-base font-medium rounded-sm text-white bg-red-600 hover:bg-red-700 md:py-4 md:text-lg md:px-10 h-10 cursor-pointer"
+        type="button">
+        Back to HomePage
+      </button>
     </div>
   );
 };
