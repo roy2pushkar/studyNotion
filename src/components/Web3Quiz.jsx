@@ -7,7 +7,7 @@ import 'tailwindcss/tailwind.css';
 import { useNavigate } from 'react-router-dom';
 
 
-const BlockChainQuizPage = () => {
+const Web3QuizPage = () => {
   const quizQuestions = [
     {
       question: 'Question 1: Web2 applications tend to be centralized',
@@ -232,4 +232,4 @@ const BlockChainQuizPage = () => {
 
 
 
-export default BlockChainQuizPage;
+export default Web3QuizPage;

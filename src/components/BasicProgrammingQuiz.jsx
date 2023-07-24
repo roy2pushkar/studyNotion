@@ -7,7 +7,7 @@ import 'tailwindcss/tailwind.css';
 import { useNavigate } from 'react-router-dom';
 
 
-const BlockChainQuizPage = () => {
+const BasicprogrammingQuizPage = () => {
   const quizQuestions = [
     {
       question: 'Question 1: What is a frontend?',
@@ -189,4 +189,4 @@ const BlockChainQuizPage = () => {
 
 
 
-export default BlockChainQuizPage;
+export default BasicprogrammingQuizPage;
