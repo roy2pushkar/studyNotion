@@ -10,76 +10,93 @@ import { useNavigate } from 'react-router-dom';
 const EtherumQuizPage = () => {
   const quizQuestions = [
     {
-      question: 'Question 1: Web2 applications tend to be centralized',
+      question: 'Question 1: What is Solidity?',
       answers: {
-        a: 'True',
-        b: 'False',
+        a: 'A decentralized exchange protocol.',
+        b: 'A programming language for writing smart contracts.',
+        c: 'An Ethereum-based cryptocurrency.',
+        d: 'A consensus algorithm used in blockchain networks.',
         
        
       },
-      correctAnswer: 'a',
+      correctAnswer: 'b',
     },
     {
-      question: 'Question 2: It is easier for data breaches to happen in Web2 applications',
+      question: 'Question 2: Which keyword is used to declare a function in Solidity? ',
       answers: {
-        a: 'True',
-        b: 'False',
-      },
-      correctAnswer: 'a',
-    },
-    {
-      question: 'Question 3: Web3 applications tend to be centralized',
-      answers: {
-         a: 'True',
-        b: 'False',
-     
+        a: 'func',
+        b: 'function',
+        c: 'def',
+        d: 'contract',
+        
       },
       correctAnswer: 'b',
+    },
+    {
+      question: 'Question 3: What is the purpose of the "constructor" function in a Solidity smart contract?',
+     answers: {
+        a: 'To define the initial state variables of the contract',
+        b: ' To restrict access to certain functions within the contract.',
+        c: 'To handle arithmetic operations within the contract.',
+        d: 'To create new instances of the contract.',
+        
+      },
+      correctAnswer: 'a',
     },
      {
-      question: 'Question 4: Web3 does not require permission to enter',
+      question: 'Question 4: Which data type is used for storing Ethereum addresses in Solidity?',
       answers: {
-        a: 'True',
-        b: 'False',
-     
-      },
-      correctAnswer: 'a',
-    },
-    {
-      question: 'Question 5:Web3 applications tend to be centralized',
-      answers: {
-         a: 'True',
-        b: 'False',
-     
+        a: 'unit',
+        b: 'address',
+        c: 'string',
+        d: 'bool',
+        
       },
       correctAnswer: 'b',
     },
     {
-      question: 'Question 6:Web3 applications tend to be distributed',
+      question: 'Question 5: What does the "view" keyword mean in a function declaration in Solidity?',
       answers: {
-       a: 'True',
-        b: 'False',
-     
+        a: 'The function cannot modify state variables.',
+        b: 'The function can only be called by the contract owner.',
+        c: 'The function is executed automatically upon contract deployment.',
+        d: 'The function is executed asynchronously.',
+        
       },
       correctAnswer: 'a',
     },
     {
-      question: 'Question 7:Web3 does not require trust on a central authority',
+      question: 'Question 6:What is the purpose of the "require" statement in Solidity?',
       answers: {
-        a: 'True',
-        b: 'False',
-     
+        a: 'To validate function inputs and conditions before proceeding.',
+        b: 'To add a new contract to the Ethereum blockchain.',
+        c: 'To specify the amount of gas required for contract execution.',
+        d: 'To create an instance of a contract.',
+        
       },
       correctAnswer: 'a',
     },
     {
-      question: 'Question 8:Web3 is open and inclusive for all',
-      answers: {
-        a: 'True',
-        b: 'False',
-     
+      question: 'Question 7:Which of the following is NOT a visibility modifier in Solidity?',
+       answers: {
+        a: 'public',
+        b: 'private',
+        c: 'protected',
+        d: 'internal',
+        
       },
-      correctAnswer: 'a',
+      correctAnswer: 'c',
+    },
+    {
+      question: 'Question 8:How are events used in Solidity smart contracts?',
+      answers: {
+        a: 'To modify state variables within the contract.',
+        b: 'To facilitate communication between different contracts.',
+        c: 'To calculate gas fees for contract execution.',
+        d: 'o create new tokens on the Ethereum blockchain.',
+        
+      },
+      correctAnswer: 'b',
     },
     
     
