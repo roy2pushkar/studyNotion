@@ -14,6 +14,7 @@ import web3 from '../images/web3.jpg';
 import programming from '../images/programming.jpg';
 import  { useEffect, useState } from 'react';
 import Web3 from 'web3';
+import logo from '../images/studyNotion.png';
 
 function MainPage() {
   const navigate = useNavigate();
@@ -407,11 +408,22 @@ function MainPage() {
       <div className="max-w-6xl m-auto text-gray-800 flex justify-between ">
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
          
-          <a
-            className="text-white text-3xl font-bold flex justify-center items-center uppercase hover:text-gray-300"
+          <div className="flex flex-col justify-center items-center gap-2">
+           <div>
+             <a
+            className="text-white text-3xl font-bold  uppercase hover:text-gray-300"
             href="#"
             >StudyNotion</a
           >
+           </div>
+          <div id="" className="h">
+        <img src= {logo}  className="" alt="logo-img" /> 
+
+      </div>
+          </div>
+          <div className="hidden">
+        <img src={dark} className="cursor-pointer" alt="day-img" />
+      </div>
           
         </div>
 
