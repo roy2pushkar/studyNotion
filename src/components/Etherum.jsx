@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { useNavigate } from 'react-router-dom';
+import logo from '../images/studyNotion.png';
 
 const Etherum = () => {
   const navigate = useNavigate();
@@ -183,9 +184,10 @@ and many more...
             <div className='text-white'>
            © 2023 StudyNotion, Inc. All rights reserved
             </div>
-            <div className='text-white'>
-            soicials Link
-            </div>
+             <div id="" className="">
+        <img src= {logo}  className="" alt="logo-img" /> 
+
+      </div>
         </div>
     </div>
   );

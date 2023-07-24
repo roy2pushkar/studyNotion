@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import { useNavigate } from 'react-router-dom';
+import logo from '../images/studyNotion.png';
 
 const GetStarted = () => {
   const navigate = useNavigate();
@@ -164,9 +165,10 @@ const GetStarted = () => {
             <div className='text-white'>
            © 2023 StudyNotion, Inc. All rights reserved
             </div>
-            <div className='text-white'>
-            soicials Link
-            </div>
+             <div id="" className="h">
+        <img src= {logo}  className="" alt="logo-img" /> 
+
+      </div>
         </div>
     </div>
   );

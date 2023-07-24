@@ -76,24 +76,24 @@ function MainPage() {
       <nav className="">
   <div className="flex justify-between items-center p-8 mx-6">
     <div>
-      <a href="#" className="text-3xl font-extrabold">
+      <a href="#" className="text-3xl text-white font-extrabold">
         StudyNotion
       </a>
     </div>
 
     <div className="flex gap-4 mx-6 justify-between items-center">
-      <a href="#home" className="hover:text-gray-600 hover:font-semibold">
+      <a href="#home" className="hover:text-gray-600 hover:font-semibold text-white">
         Home
       </a>
-      <a href="#about-us" className="hover:text-gray-600 hover:font-semibold">
+      <a href="#about-us" className="hover:text-gray-600 hover:font-semibold text-white">
         About
       </a>
-      <a href="#courses" className="hover:text-gray-600 hover:font-semibold">
+      <a href="#courses" className="hover:text-gray-600 hover:font-semibold text-white">
         Courses
       </a>
       <a
         href="#contact-us"
-        className="hover:text-gray-600 hover:font-semibold"
+        className="hover:text-gray-600 hover:font-semibold text-white"
       >
         Contact
       </a>
@@ -141,7 +141,7 @@ function MainPage() {
     </div>
       <div className="Home flex flex-col justify-between p-8 items-center ">
         <div className="uppercase font-extrabold text-3xl">
-          <h1 className=" text-orange-500 ">Blockchain Technology</h1>
+          <h1 className=" text-black ">Blockchain Technology</h1>
         </div>
       
       <div id="home" className="hero-part p-8">
@@ -152,30 +152,18 @@ function MainPage() {
     </div>
     <div className="About">
        <section class="bg-gray-400">
-      <div className="p-8">
+      <div className="p-12 m-12">
         <h2 id="about-us" class="text-2xl font-extrabold text-center uppercase">
           About us
         </h2>
         <p className="text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at
-          praesentium quaerat quae officia quia blanditiis suscipit perferendis
-          ut itaque! Temporibus dolorum dolore et voluptas obcaecati iusto
-          cupiditate distinctio cumque? Lorem, ipsum dolor sit amet consectetur
-          adipisicing elit. Modi commodi quidem delectus possimus veniam et
-          cumque asperiores harum, tempore recusandae architecto quasi eveniet
-          provident perferendis corrupti assumenda inventore culpa sed. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi
-          repellat eos aut soluta cupiditate animi iusto eum voluptatum
-          explicabo pariatur, modi blanditiis minima nostrum, vitae voluptas
-          ipsam et obcaecati? Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Veniam magnam, quis corporis perferendis commodi
-          voluptatibus facere enim quo molestiae vitae dolor expedita tenetur
-          cum recusandae excepturi quaerat sequi tempore atque! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Nihil rerum temporibus
-          dolor! Labore unde, quos asperiores sint minus ut pariatur alias,
-          molestiae veniam molestias architecto quo totam? Illo, similique
-          dignissimos.
+          Welcome to our cutting-edge Web3 course provider website! We are passionate about empowering individuals with the latest knowledge and skills in blockchain technology and decentralized applications
         </p>
+        <br />
+        
+        <p className="text-lg">Join us on this transformative journey to understand the future of the internet and revolutionize the way we interact and transact online. Embrace the decentralized world with confidence through our comprehensive and hands-on Web3 courses!</p>
+        <br />
+        <p className="text-lg">Unlock the potential of Web3 and explore the limitless possibilities of blockchain technology with our dynamic and interactive online courses. Stay ahead of the curve and be part of the decentralized revolution today!</p>
       </div>
     </section>
     </div>
@@ -196,8 +184,7 @@ function MainPage() {
             <div className="flex flex-col gap-2 m-8">
               <img src= {programming}  className="w-[360px] h-[250px] rounded-md" alt="intro-to-programming" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+                Discover the fundamentals of programming with our beginner-friendly courses. Dive into the world of coding, develop problem-solving skills, and unlock a world of endless opportunities in the digital realm.
               </p>
 
             </div>
@@ -220,8 +207,7 @@ function MainPage() {
              <div className="flex flex-col gap-2 m-8 ">
               <img src= {blockchain}  className="w-[360px] h-[250px] rounded-md" alt="blockchain" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+                Blockchain is a revolutionary decentralized technology that enables secure and transparent digital transactions. It operates as an immutable and distributed ledger, ensuring trust, traceability, and accountability across various industries and applications.
               </p>
 
             </div>
@@ -243,8 +229,7 @@ function MainPage() {
              <div className="flex flex-col gap-2 m-8">
               <img src= {image}  className="w-[360px] h-[250px] rounded-md" alt="web3" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+              Web3.0, often referred to as the "decentralized web," represents the next generation of the internet, where blockchain technology plays a pivotal role. It empowers users with full control over their data, enables peer-to-peer interactions, and fosters a new era of trust, privacy, and autonomy online.
               </p>
 
             </div>
@@ -265,8 +250,7 @@ function MainPage() {
              <div className="flex flex-col gap-2 m-8">
               <img src= {metamask}  className="w-[360px] h-[250px] rounded-md" alt="metamask" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+                Ethereum is a decentralized blockchain platform that allows developers to build and deploy smart contracts and decentralized applications (DApps). It utilizes its native cryptocurrency, Ether (ETH), to facilitate transactions and incentivize network participants.
               </p>
 
             </div>
@@ -286,8 +270,7 @@ function MainPage() {
              <div className="flex flex-col gap-2 m-8">
               <img src= {crypto}  className="w-[360px] h-[250px] rounded-md" alt="crypto" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+               Cryptocurrency, often referred to as crypto, is a digital or virtual form of currency secured by cryptography, making it nearly impossible to counterfeit. It operates on decentralized networks, like blockchain, enabling secure and transparent transactions worldwide.
               </p>
 
             </div>
@@ -308,8 +291,7 @@ function MainPage() {
              <div className="flex flex-col gap-2 m-8">
               <img src= {solidity}  className="w-[360px] h-[250px] rounded-md" alt="solidity" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
-                Our experienced team of chartered accountants can help you
-                optimize your tax strategy and minimize your tax liability.
+                Solidity is a high-level programming language used for writing smart contracts on the Ethereum blockchain and other compatible platforms. It provides a secure and efficient way to implement complex functionalities within decentralized applications (DApps).
               </p>
 
             </div>
@@ -326,6 +308,13 @@ function MainPage() {
     <div className="Contact">
       <section className="bg-gray-400">
       <div className="p-8">
+        
+        <h3
+          id="contact-us"
+          className="text-2xl text-blue-600 font-extrabold text-center uppercase"
+        >
+         contact-us
+        </h3>
         <h3
           id="contact-us"
           className="text-2xl font-extrabold text-center uppercase"
@@ -416,7 +405,7 @@ function MainPage() {
             >StudyNotion</a
           >
            </div>
-          <div id="" className="h">
+          <div id="" className="">
         <img src= {logo}  className="" alt="logo-img" /> 
 
       </div>
