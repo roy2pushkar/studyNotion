@@ -10,95 +10,71 @@ import { useNavigate } from 'react-router-dom';
 const EtherumQuizPage = () => {
   const quizQuestions = [
     {
-      question: 'Question 1: What is an address?',
+      question: 'Question 1: How are smart contracts executed?',
       answers: {
-        a: 'An address represents a crypto currency',
-        b: 'An address represents your account on the blockchain',
-        c: 'An address represents your crypto balance',
+        a: 'On Ethereum servers',
+        b: 'On the Ethereum Virtual Machine (EVM)',
+        c: 'Jeff Bezos runs them',
         
        
       },
       correctAnswer: 'b',
     },
     {
-      question: 'Question 2: 🤔 Which one of the following is an Ethereum address?',
+      question: 'Question 2: 🤔 Ethereum currently uses which consensus algorithm?',
       answers: {
-        a: 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh',
-        b: '0x71C7656EC7ab88b098defB751B7401B5f6d8976F',
-        c:'@LearnWeb3WithStudyNotion',
+        a: 'Proof of Work',
+        b: 'Proof of Stake',
+        c:'Proof of Authority',
       },
-      correctAnswer: 'b',
+      correctAnswer: 'a',
     },
     {
-      question: 'Question 3: What is a private key?',
+      question: 'Question 3: WIn the Serenity patch... Ethereum moved from Proof of Work to Proof of Stake',
       answers: {
-         a: 'Private key is like a strong password for your account',
-        b: 'Private key is another name for an address',
-        c:'Private key refers to a crypto wallet',
+         a: 'True',
+        b: 'False',
+        
      
       },
       correctAnswer: 'a',
     },
      {
-      question: 'Question 4: What should you do with your private key?',
+      question: 'Question 4: What is the native currency of Ethereum?',
       answers: {
-        a: 'You should share your private key with everyone',
-        b: 'You should share your private key with only your friends and family',
-        c: 'You should never share your private key',
+        a: 'NEAR',
+        b: ' ETH',
+        c: 'BTC',
+        d: 'MATIC'
      
       },
-      correctAnswer: 'c',
+      correctAnswer: 'b',
     },
+    
     {
-      question: 'Question 5:What is a seed phrase?',
+      question: 'Question 5:You can create your own ERC-20 token without the permission of Ethereum.',
       answers: {
-         a: 'Seed phrase is like a password for your address',
-        b: 'Seed phrase is like a master password for your crypto wallet',
-        c: 'Seed phrase is like a password for private key',
+         a: 'True',
+        b: 'False',
+       
      
       },
       correctAnswer: 'b',
     },
     {
-      question: 'Question 6:WWhat is an example of seed phrase?',
+      question: 'Question 6:Which statement best describes Proof of Work?',
       answers: {
-       a: 'correct horse battery staple',
-        b: 'Y123456789',
-        c : 'jealous expect hundred young unlock disagree major siren surge acoustic machine catalog',
-     
-      },
-      correctAnswer: 'c',
-    },
-    {
-      question: 'Question 7:What is a crypto wallet?',
-      answers: {
-        a: 'Crypto wallet manages your seed phrases',
-        b: 'Crypto wallet manages the private keys associated with your addresses',
-        c: 'Crypto wallet manages your crypto balance',
-     
-      },
-      correctAnswer: 'b'
-    },
-    {
-      question: 'Question 8:What is MetaMask?',
-      answers: {
-        a: 'An Ethereum wallet',
-        b: 'A Bitcoin wallet',
-        c: 'A Solana wallet',
+       a: 'Miners with the most currency are allowed to mine and add blocks to the blockchain',
+        b: 'Miners compete to solve computational puzzles. The winner of this competition gets to add a block to the blockchain.',
+        c : 'Miners work to compute an EVM routing problem. The first miner to solve the problem gets to add blocks to the Blockchain',
      
       },
       correctAnswer: 'a',
     },
-    {
-      question: 'Question 8:Have you downloaded a wallet and set it up?',
-      answers: {
-        a: 'True',
-        b: 'False',
-       
+    
      
-      },
-      correctAnswer: 'a',
-    },
+    
+    
     
     
   
