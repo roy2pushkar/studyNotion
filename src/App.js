@@ -15,6 +15,11 @@ import BasicProgrammingQuiz from "./components/BasicProgrammingQuiz";
 import BasicProgramming from "./components/BasicProgramming";
 import BlockChain from "./components/BlockChain";
 import ConnectWallet from "./components/ConnectWallet";
+import BlockChainQuiz from "./components/BlockChainQuiz";
+import Web3Quiz from "./components/Web3Quiz";
+import EtherumQuiz from "./components/EtherumQuiz";
+import CryptoQuiz from "./components/CryptoQuiz";
+import SolidityQuiz from "./components/SolidityQuiz";
 
 function App() {
   return (
@@ -37,6 +42,11 @@ function App() {
           path="/basicprogrammingquiz"
           element={<BasicProgrammingQuiz />}
         />
+        <Route path="/blockchainquiz" element={<BlockChainQuiz />} />
+        <Route path="/web3quiz" element={<Web3Quiz />} />
+        <Route path="/etherumquiz" element={<EtherumQuiz />} />
+        <Route path="/Cryptoquiz" element={<CryptoQuiz />} />
+        <Route path="/solidityquiz" element={<SolidityQuiz />} />
       </Routes>
     </div>
   );

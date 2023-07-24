@@ -27,14 +27,14 @@ function MainPage() {
   function solidityclickHandler() {
      navigate("/solidity");
   }
-  function metamaskclickHandler() {
-     navigate("/metamask");
+  function etherumclickHandler() {
+     navigate("/etherum");
   }
-  function javascriptclickHandler() {
-     navigate("/javascript");
+  function web3clickHandler() {
+     navigate("/web3");
   }
-  function frontendclickHandler() {
-     navigate("/frontend");
+  function blockchainclickHandler() {
+     navigate("/blockchain");
   }
   const [web3, setWeb3] = useState(null);
   const [accounts, setAccounts] = useState([]);
@@ -226,7 +226,7 @@ function MainPage() {
             </div>
             <div className=" p-4">
              
-              <button onClick={cryptoclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={blockchainclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
         </Link>
@@ -240,7 +240,7 @@ function MainPage() {
               
             </div>
              <div className="flex flex-col gap-2 m-8">
-              <img src= {web3}  className="w-[360px] h-[250px] rounded-md" alt="web3" /> 
+              <img src= {image}  className="w-[360px] h-[250px] rounded-md" alt="web3" /> 
                <p className="text-gray-700 leading-6 w-[350px]">
                 Our experienced team of chartered accountants can help you
                 optimize your tax strategy and minimize your tax liability.
@@ -249,7 +249,7 @@ function MainPage() {
             </div>
            <div className=" p-4">
              
-              <button onClick={solidityclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={web3clickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
         </Link>
@@ -271,7 +271,7 @@ function MainPage() {
             </div>
            <div className=" p-4">
              
-              <button onClick={metamaskclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={etherumclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div></Link>
        
@@ -292,7 +292,7 @@ function MainPage() {
             </div>
           <div className=" p-4">
              
-              <button onClick={javascriptclickHandler}  className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={cryptoclickHandler}  className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
           </Link>
@@ -314,7 +314,7 @@ function MainPage() {
             </div>
            <div className=" p-4">
              
-              <button onClick={frontendclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
+              <button onClick={solidityclickHandler} className="text-blue-600 font-bold hover:underline"> Learn more</button>
             </div>
           </div>
          </Link>
