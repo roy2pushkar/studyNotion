@@ -10,73 +10,91 @@ import { useNavigate } from 'react-router-dom';
 const EtherumQuizPage = () => {
   const quizQuestions = [
     {
-      question: 'Question 1: Web2 applications tend to be centralized',
+      question: 'Question 1: What is an address?',
       answers: {
-        a: 'True',
-        b: 'False',
+        a: 'An address represents a crypto currency',
+        b: 'An address represents your account on the blockchain',
+        c: 'An address represents your crypto balance',
         
        
       },
-      correctAnswer: 'a',
+      correctAnswer: 'b',
     },
     {
-      question: 'Question 2: It is easier for data breaches to happen in Web2 applications',
+      question: 'Question 2: 🤔 Which one of the following is an Ethereum address?',
       answers: {
-        a: 'True',
-        b: 'False',
-      },
-      correctAnswer: 'a',
-    },
-    {
-      question: 'Question 3: Web3 applications tend to be centralized',
-      answers: {
-         a: 'True',
-        b: 'False',
-     
+        a: 'bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh',
+        b: '0x71C7656EC7ab88b098defB751B7401B5f6d8976F',
+        c:'@LearnWeb3WithStudyNotion',
       },
       correctAnswer: 'b',
+    },
+    {
+      question: 'Question 3: What is a private key?',
+      answers: {
+         a: 'Private key is like a strong password for your account',
+        b: 'Private key is another name for an address',
+        c:'Private key refers to a crypto wallet',
+     
+      },
+      correctAnswer: 'a',
     },
      {
-      question: 'Question 4: Web3 does not require permission to enter',
+      question: 'Question 4: What should you do with your private key?',
       answers: {
-        a: 'True',
-        b: 'False',
+        a: 'You should share your private key with everyone',
+        b: 'You should share your private key with only your friends and family',
+        c: 'You should never share your private key',
      
       },
-      correctAnswer: 'a',
+      correctAnswer: 'c',
     },
     {
-      question: 'Question 5:Web3 applications tend to be centralized',
+      question: 'Question 5:What is a seed phrase?',
       answers: {
-         a: 'True',
-        b: 'False',
+         a: 'Seed phrase is like a password for your address',
+        b: 'Seed phrase is like a master password for your crypto wallet',
+        c: 'Seed phrase is like a password for private key',
      
       },
       correctAnswer: 'b',
     },
     {
-      question: 'Question 6:Web3 applications tend to be distributed',
+      question: 'Question 6:WWhat is an example of seed phrase?',
       answers: {
-       a: 'True',
-        b: 'False',
+       a: 'correct horse battery staple',
+        b: 'Y123456789',
+        c : 'jealous expect hundred young unlock disagree major siren surge acoustic machine catalog',
+     
+      },
+      correctAnswer: 'c',
+    },
+    {
+      question: 'Question 7:What is a crypto wallet?',
+      answers: {
+        a: 'Crypto wallet manages your seed phrases',
+        b: 'Crypto wallet manages the private keys associated with your addresses',
+        c: 'Crypto wallet manages your crypto balance',
+     
+      },
+      correctAnswer: 'b'
+    },
+    {
+      question: 'Question 8:What is MetaMask?',
+      answers: {
+        a: 'An Ethereum wallet',
+        b: 'A Bitcoin wallet',
+        c: 'A Solana wallet',
      
       },
       correctAnswer: 'a',
     },
     {
-      question: 'Question 7:Web3 does not require trust on a central authority',
+      question: 'Question 8:Have you downloaded a wallet and set it up?',
       answers: {
         a: 'True',
         b: 'False',
-     
-      },
-      correctAnswer: 'a',
-    },
-    {
-      question: 'Question 8:Web3 is open and inclusive for all',
-      answers: {
-        a: 'True',
-        b: 'False',
+       
      
       },
       correctAnswer: 'a',
