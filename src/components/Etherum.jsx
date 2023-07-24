@@ -6,7 +6,7 @@ const Etherum = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
-    navigate('/basicprogrammingquiz')
+    navigate('/etherumquiz')
   }
    function backclickHandler(){
     navigate('/mainpage')

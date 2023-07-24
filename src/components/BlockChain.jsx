@@ -6,7 +6,7 @@ const BlockChain = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
-    navigate('/basicprogrammingquiz')
+    navigate('/blockchainquiz')
   }
    function backclickHandler(){
     navigate('/mainpage')

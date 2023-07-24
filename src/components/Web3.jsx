@@ -6,7 +6,7 @@ const Web3 = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
-    navigate('/basicprogrammingquiz')
+    navigate('/web3quiz')
   }
    function backclickHandler(){
     navigate('/mainpage')

@@ -71,8 +71,8 @@ function MainPage() {
  
   return (
     <div className="MainPage bg-gray-400">
-    <div className="sticky rounded-md outline-purple-200 shadow-white ">
-      <nav className="bg-purple-400">
+    <div className="sticky rounded-md bg-gray-800 shadow-white ">
+      <nav className="">
   <div className="flex justify-between items-center p-8 mx-6">
     <div>
       <a href="#" className="text-3xl font-extrabold">
@@ -96,7 +96,7 @@ function MainPage() {
       >
         Contact
       </a>
-      <div>
+      <div className="hidden">
         <img src={dark} className="cursor-pointer" alt="day-img" />
       </div>
 
@@ -138,7 +138,7 @@ function MainPage() {
 </nav>
 
     </div>
-      <div className="Home flex justify-between p-8 items-center bg-purple-500">
+      <div className="Home flex flex-col justify-between p-8 items-center ">
         <div className="uppercase font-extrabold text-3xl">
           <h1 className=" text-orange-500 ">Blockchain Technology</h1>
         </div>
@@ -150,7 +150,7 @@ function MainPage() {
     
     </div>
     <div className="About">
-       <section class="bg-gray-200">
+       <section class="bg-gray-400">
       <div className="p-8">
         <h2 id="about-us" class="text-2xl font-extrabold text-center uppercase">
           About us
@@ -181,7 +181,7 @@ function MainPage() {
   
     <div className="CourseTopic">
      <section className="">
-      <div id="courses" class="bg-gray-300 p-8">
+      <div id="courses" class="bg-gray-400 p-8">
         <h2 className="text-2xl font-extrabold text-center uppercase">Courses</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           
@@ -324,7 +324,7 @@ function MainPage() {
     </div>
     <div className="Contact">
       <section className="bg-gray-400">
-      <div className="p-8 bg-purple-300">
+      <div className="p-8">
         <h3
           id="contact-us"
           className="text-2xl font-extrabold text-center uppercase"
@@ -332,7 +332,7 @@ function MainPage() {
           If You have any doubt,feel free to contact
         </h3>
         <form
-          className="bg-purple-200 px-8 pt-6 pb-8 flex flex-col items-center"
+          className="bg-gray-400 px-8 pt-6 pb-8 flex flex-col items-center"
         >
           
           <div className="mb-4 w-1/2">
@@ -404,19 +404,15 @@ function MainPage() {
     </section>
     </div>
     <footer className="bg-gray-800 sm:mt-10 pt-10">
-      <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
+      <div className="max-w-6xl m-auto text-gray-800 flex justify-between ">
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
          
           <a
-            className="text-white text-3xl font-bold uppercase hover:text-gray-300"
+            className="text-white text-3xl font-bold flex justify-center items-center uppercase hover:text-gray-300"
             href="#"
             >StudyNotion</a
           >
-          <p className="text-gray-500 text-sm mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            illum hic culpa, maiores quas iste architecto ex a. Eligendi,
-            laboriosam vel.
-          </p>
+          
         </div>
 
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
@@ -428,15 +424,11 @@ function MainPage() {
             className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
             >About</a
           >
+         
           <a
-            href="#our-services"
+            href="#home"
             className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >Services</a
-          >
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >Projects</a
+            >Home</a
           >
           <a
             href="#"
@@ -445,31 +437,7 @@ function MainPage() {
           >
         </div>
 
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          <div className="text-xs uppercase text-gray-500 font-medium mb-6">
-            Courses
-          </div>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >Web design</a
-          >
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >Development</a
-          >
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >Hosting</a
-          >
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-            >CMS</a
-          >
-        </div>
+        
 
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           <div className="text-xs uppercase text-gray-500 font-medium mb-6">

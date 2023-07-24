@@ -6,7 +6,7 @@ const Crypto = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
-    navigate('/basicprogrammingquiz')
+    navigate('/cryptoquiz')
   }
    function backclickHandler(){
     navigate('/mainpage')

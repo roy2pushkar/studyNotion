@@ -6,7 +6,7 @@ const Solidity = () => {
   const navigate = useNavigate();
 
   function quizclickHandler(){
-    navigate('/basicprogrammingquiz')
+    navigate('/solidityquiz')
   }
    function backclickHandler(){
     navigate('/mainpage')
