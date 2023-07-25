@@ -26,28 +26,25 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Front />} />
-        <Route path="/mainpage" element={<MainPage />} />
+        <Route path="mainpage" element={<MainPage />} />
 
-        <Route path="/crypto" element={<Crypto />} />
-        <Route path="/blockchain" element={<BlockChain />} />
+        <Route path="crypto" element={<Crypto />} />
+        <Route path="blockchain" element={<BlockChain />} />
 
-        <Route path="/solidity" element={<Solidity />} />
+        <Route path="solidity" element={<Solidity />} />
 
-        <Route path="/etherum" element={<Etherum />} />
+        <Route path="etherum" element={<Etherum />} />
 
-        <Route path="/web3" element={<Web3 />} />
+        <Route path="web3" element={<Web3 />} />
 
-        <Route path="/mainpage" element={<MainPage />} />
-        <Route path="/basicsprogramming" element={<BasicProgramming />} />
-        <Route
-          path="/basicprogrammingquiz"
-          element={<BasicProgrammingQuiz />}
-        />
-        <Route path="/blockchainquiz" element={<BlockChainQuiz />} />
-        <Route path="/web3quiz" element={<Web3Quiz />} />
-        <Route path="/etherumquiz" element={<EtherumQuiz />} />
-        <Route path="/Cryptoquiz" element={<CryptoQuiz />} />
-        <Route path="/solidityquiz" element={<SolidityQuiz />} />
+        <Route path="mainpage" element={<MainPage />} />
+        <Route path="basicsprogramming" element={<BasicProgramming />} />
+        <Route path="basicprogrammingquiz" element={<BasicProgrammingQuiz />} />
+        <Route path="blockchainquiz" element={<BlockChainQuiz />} />
+        <Route path="web3quiz" element={<Web3Quiz />} />
+        <Route path="etherumquiz" element={<EtherumQuiz />} />
+        <Route path="Cryptoquiz" element={<CryptoQuiz />} />
+        <Route path="solidityquiz" element={<SolidityQuiz />} />
       </Routes>
     </div>
   );
