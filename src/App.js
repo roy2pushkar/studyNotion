@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Front />} />
-        <Route path="mainpage" element={<MainPage />} />
+        <Route path="/mainpage" element={<MainPage />} />
 
         <Route path="crypto" element={<Crypto />} />
         <Route path="blockchain" element={<BlockChain />} />
