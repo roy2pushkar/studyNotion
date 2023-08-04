@@ -54,7 +54,7 @@ const Solidity = () => {
               <p>
                 contract HelloWorld  { }
 
-}
+
               </p>
             </div>
             <br />
