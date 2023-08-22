@@ -58,6 +58,7 @@ function NavbarItems() {
           </div>
         </div>
       </nav>
+      
     </div>
   );
 }

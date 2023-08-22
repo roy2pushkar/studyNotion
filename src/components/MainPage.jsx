@@ -217,7 +217,6 @@ function MainPage() {
             </div>
           </div>
         </Link>
-
        
          <Link to="/web3">
           <div className=" 
